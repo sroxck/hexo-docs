@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Archives | Sroxck</title>
+  <title>清除浮动最常用的几种方式 | Sroxck</title>
   
   
   <meta name="description" content="分享技术,个人生活,学习知识的场所">
@@ -52,7 +52,7 @@
 <body>
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <p class="title ">Volantis</p>
@@ -284,101 +284,207 @@
       
 
 <div class='l_main'>
-	
-	  <article id="archive-page" class="post article white-box  widget-blur">
-	    <section class="archive">
-	      
-	          <div class="archive-item archive-year mark">
-	            <h2>2020</h2>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/03/01/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">
-	              <time>03-01</time>
-	              <span class="title">
-	                
-	                  清除浮动最常用的几种方式
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/02/29/H5C3%E7%AC%94%E8%AE%B0/">
-	              <time>02-29</time>
-	              <span class="title">
-	                
-	                  H5C3笔记
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/02/29/Vue%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96%E5%92%8C%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/">
-	              <time>02-29</time>
-	              <span class="title">
-	                
-	                  Vue项目优化和部署上线
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/02/29/Vue%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">
-	              <time>02-29</time>
-	              <span class="title">
-	                
-	                  基于NeteaseCloudMusicApi的vue音乐播放器项目
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/02/27/git%E7%9A%84%E4%BD%BF%E7%94%A8/">
-	              <time>02-27</time>
-	              <span class="title">
-	                
-	                  使用git管理项目,推送到github远程仓库
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	          <div class="archive-item archive-post mark">
-	            <a href="/2020/02/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6%E5%85%A5%E9%97%A8%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6/">
-	              <time>02-26</time>
-	              <span class="title">
-	                
-	                  微信小程序组件入门初识组件
-	                
-	                
-									
-									
-	              </span>
-	            </a>
-	          </div>
-	      
-	    </section>
-	  </article>
-	
+  
+
+  
+    <article id="post" class="post white-box   article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/03/01/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">
+        清除浮动最常用的几种方式
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 1, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <blockquote>
+<p>首先我们要知道为何要清除浮动</p>
+<p>浮动的元素会脱离文档流,会导致父元素的高度塌陷,后面的元素挤压上来,影响页面布局.所以需要清除浮动</p>
+</blockquote>
+<h3 id="清除浮动常用的几种方式"><a href="#清除浮动常用的几种方式" class="headerlink" title="清除浮动常用的几种方式"></a>清除浮动常用的几种方式</h3><h4 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h4><p>额外标签法是指在浮动的元素后面添加一个额外的标签,对标签的css属性设置<code>clear:both</code>即可清除浮动,缺点是添加了无意义的标签</p>
+<h4 id="设置父元素css属性-overflow-hidden"><a href="#设置父元素css属性-overflow-hidden" class="headerlink" title="设置父元素css属性 overflow:hidden"></a>设置父元素css属性 overflow:hidden</h4><p>给浮动元素的父元素设置<code>overflow:hidden</code>即可清除浮动</p>
+<h4 id="伪元素清除浮动"><a href="#伪元素清除浮动" class="headerlink" title="伪元素清除浮动"></a>伪元素清除浮动</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="双伪元素清除浮动"><a href="#双伪元素清除浮动" class="headerlink" title="双伪元素清除浮动"></a>双伪元素清除浮动</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::before</span>,<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">    <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    zoom:1; // 兼容ie</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="额外拓展之BFC"><a href="#额外拓展之BFC" class="headerlink" title="额外拓展之BFC"></a>额外拓展之BFC</h3><h3 id="什么是BFC？"><a href="#什么是BFC？" class="headerlink" title="什么是BFC？"></a>什么是BFC？</h3><p>BFC 全称为 块格式化上下文 (Block Formatting Context) 。</p>
+<p>从这个概念里你能看出来什么吗？</p>
+<p>这个名字给我们的信息只有 “块” “格式化” “上下文” 。我们大概可以了解到这个东西是对上下文起作用的。<br> 那里的上下文？？ HTML文档！<br> 它大概的作用，貌似是格式化上下文？？可能不是我们通常意义中的格式化。</p>
+<p>我们没有从这个名字中得到太多有用的信息，仅仅知道它是一种功能，针对于 HTML文档 起作用。</p>
+<p>那我们去看看官方是怎么解释的。</p>
+<p><strong>MDN：</strong></p>
+<blockquote>
+<p>一个块格式化上下文（block formatting context） 是Web页面的可视化CSS渲染出的一部分。它是块级盒布局出现的区域，也是浮动层元素进行交互的区域。<br> 一个块格式化上下文由以下之一创建：</p>
+<ul>
+<li>根元素或其它包含它的元素</li>
+<li>浮动元素 (元素的 float 不是 none)</li>
+<li>绝对定位元素 (元素具有 position 为 absolute 或 fixed)</li>
+<li>内联块 (元素具有 display: inline-block)</li>
+<li>表格单元格 (元素具有 display: table-cell，HTML表格单元格默认属性)</li>
+<li>表格标题 (元素具有 display: table-caption, HTML表格标题默认属性)</li>
+<li>具有overflow 且值不是 visible 的块元素，</li>
+<li>display: flow-root</li>
+<li>column-span: all 应当总是会创建一个新的格式化上下文，即便具有 column-span: all 的元素并不被包裹在一个多列容器中。</li>
+<li>一个块格式化上下文包括创建它的元素内部所有内容，除了被包含于创建新的块级格式化上下文的后代元素内的元素。</li>
+</ul>
+<p>块格式化上下文对于定位 (参见 float) 与清除浮动 (参见 clear) 很重要。定位和清除浮动的样式规则只适用于处于同一块格式化上下文内的元素。浮动不会影响其它块格式化上下文中元素的布局，并且清除浮动只能清除同一块格式化上下文中在它前面的元素的浮动。</p>
+</blockquote>
+<p>我们发现一个什么问题！貌似看不懂哎！！</p>
+<p>为什么会产生这样的原因？？</p>
+<p>你能解释一下什么是桌子吗？？</p>
+<p>仔细想想，发现好像并不能合理的解释它。</p>
+<p>BFC 也是如此，只有特性(功能)，没有定义。</p>
+<h3 id="BFC-特性-功能"><a href="#BFC-特性-功能" class="headerlink" title="BFC 特性(功能)"></a>BFC 特性(功能)</h3><ol>
+<li><p>使 BFC 内部浮动元素不会到处乱跑；</p>
+</li>
+<li><p>和浮动元素产生边界。</p>
+<h4 id="使-BFC-内部的浮动元素不会到处乱跑"><a href="#使-BFC-内部的浮动元素不会到处乱跑" class="headerlink" title="使 BFC 内部的浮动元素不会到处乱跑"></a>使 BFC 内部的浮动元素不会到处乱跑</h4></li>
+</ol>
+<p>在正常的文档流中，块级元素是按照从上自下，内联元素从左到右的顺序排列的。</p>
+<p>如果我给里面的元素一个 float 或者绝对定位，它就会脱离普通文档流中</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/6874766-b1004d68354da7a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="img"> </p>
+<p>此时如果我们还想让外层元素包裹住内层元素该如果去做？？ </p>
+<p>让外层元素产生一个 BFC 。(产生 BFC 的方法 MDN 文档里有写)</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/6874766-6d653a57e10b289d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/634/format/webp" alt="img"> </p>
+<p><strong>这就是 BFC 的第一个作用：使 BFC 内部的浮动元素不会到处乱跑。</strong> </p>
+
+          
+        </div>
+        
+          <br>
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          
+
+        
+      
+        
+          
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2020/02/29/H5C3%E7%AC%94%E8%AE%B0/" rel="prev" title="H5C3笔记">
+                                    
+                                        H5C3笔记
+                                    
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '清除浮动最常用的几种方式',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -471,6 +577,41 @@
       
     
   
+    
+      
+    
+      
+        
+
+
+  <section class="widget toc-wrapper  widget-blur desktop mobile">
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#清除浮动常用的几种方式"><span class="toc-text">清除浮动常用的几种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#额外标签法"><span class="toc-text">额外标签法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置父元素css属性-overflow-hidden"><span class="toc-text">设置父元素css属性 overflow:hidden</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#伪元素清除浮动"><span class="toc-text">伪元素清除浮动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#双伪元素清除浮动"><span class="toc-text">双伪元素清除浮动</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#额外拓展之BFC"><span class="toc-text">额外拓展之BFC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是BFC？"><span class="toc-text">什么是BFC？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BFC-特性-功能"><span class="toc-text">BFC 特性(功能)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使-BFC-内部的浮动元素不会到处乱跑"><span class="toc-text">使 BFC 内部的浮动元素不会到处乱跑</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
 </aside>
 
 <footer class="clearfix ">
@@ -531,14 +672,6 @@
   
 </footer>
 <script>setLoadingBarProgress(80);</script>
-
-
-
-
-	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-	
-
-	
 
 
       <script>setLoadingBarProgress(60);</script>
