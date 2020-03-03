@@ -11,7 +11,9 @@
   
   <meta name="description" content="分享技术,个人生活,学习知识的场所,有鸭梨才能成长,有鸭梨才能进步">
   
-
+  {% if theme.baidu_site_verification %}
+  <meta name="baidu-site-verification" content="qkH4v62eeA" />
+{% endif %}
   
 
   <meta name="HandheldFriendly" content="True" />
@@ -188,9 +190,221 @@
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/">
+      详解Ajax
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 3, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <blockquote>
+<p>Ajax是浏览器提供的一套api, 可以实现页面无刷新更新数据等操作</p>
+</blockquote>
+
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/ajax/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> ajax</a>
+        
+      </div>
+     -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/03/git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">
+      git版本管理的基本使用
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 3, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h3 id="git-基本知识"><a href="#git-基本知识" class="headerlink" title="git 基本知识"></a>git 基本知识</h3><ol>
+<li>git仓库: 用于存放提交记录</li>
+<li>暂存区: 临时存放被修改文件</li>
+<li>工作目录: 被git管理的项目目录</li>
+</ol>
+<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3><ol>
+<li>配置提交人姓名: <code>git config --global user.name 提交人姓名</code></li>
+<li>配置提交人邮箱: <code>git config --global user.email 提交人邮箱</code></li>
+<li>查看git配置信息: <code>git config --list</code></li>
+</ol>
+<h3 id="git-提交步骤"><a href="#git-提交步骤" class="headerlink" title="git 提交步骤"></a>git 提交步骤</h3><ol>
+<li>初始化git仓库: <code>git init</code></li>
+<li>查看文件状态: <code>git status</code></li>
+<li>添加文件到暂存区: <code>git add 文件名</code></li>
+<li>向仓库中提交代码: <code>git commit -m 提交信息</code></li>
+<li>查看提交代码: <code>git log</code></li>
+</ol>
+<h3 id="git-撤销"><a href="#git-撤销" class="headerlink" title="git 撤销"></a>git 撤销</h3><ol>
+<li>用暂存区文件,覆盖工作目录中的文件: <code>git checkout 文件名</code></li>
+<li>将文件从暂存区中删除: <code>git rm --chached 文件名</code></li>
+<li>将git仓库中指定的更新记录恢复出来,并覆盖暂存区和工作目录: <code>git reset --hard 提交ID</code></li>
+</ol>
+<h3 id="git-分支"><a href="#git-分支" class="headerlink" title="git 分支"></a>git 分支</h3><ol>
+<li>主分支: <code>master</code> :git自动产生的一条分支</li>
+<li>开发分支:<code>develop</code>: 作为开发的分支,基于<code>mastar</code>分支创建</li>
+<li>功能分支:<code>feature</code>: 作为开发具体功能的分支,基于<code>develop</code>分支创建</li>
+</ol>
+<h3 id="git-分支命令"><a href="#git-分支命令" class="headerlink" title="git 分支命令"></a>git 分支命令</h3><ol>
+<li>查看分支: <code>git branch</code></li>
+<li>创建分支: <code>git branch 分支名称</code> </li>
+<li>切换分支: <code>git checkout 分支名称</code></li>
+<li>创建分支并切换到创建的分支: <code>git checkout -b 分支名</code></li>
+<li>合并分支: <code>git merge 分支名 被合并分支名</code></li>
+<li>删除分支:<code>git branch -d 分支名</code> 注意:合并分支后才可以删除,可以使用-D强制删除</li>
+<li>暂时保存更改,独立于分支,在任何分支可用<ol>
+<li>存储临时改动: <code>git stash</code></li>
+<li>恢复改动: <code>git stash pop</code></li>
+</ol>
+</li>
+</ol>
+<h3 id="git-忽略清单"><a href="#git-忽略清单" class="headerlink" title="git 忽略清单"></a>git 忽略清单</h3><blockquote>
+<p><code>.gitignore</code> 文件中设置不需要被git管理的文件或文件夹</p>
+</blockquote>
+
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/git/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> git</a>
+        
+      </div>
+     -->
+  </section>
+</article>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
