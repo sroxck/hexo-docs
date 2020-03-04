@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>使用git管理项目,推送到github远程仓库 | 鸭梨鸭梨呀-Sroxck</title>
+  <title>鸭梨鸭梨呀-Sroxck</title>
   
   <meta name="keywords" content="技术博客,sroxck,javascript,jQuery,vue全家桶">
   
@@ -53,7 +53,7 @@
 <body>
   
   <div class="cover-wrapper">
-    <cover class='cover post half'>
+    <cover class='cover  half'>
       
         
   <p class="title ">Sroxck</p>
@@ -178,10 +178,14 @@
 
 <div class='l_main'>
   
-
-  
-    <article id="post" class="post white-box   article-type-post" itemscope itemprop="blogPost">
+  <section class="post-list ">
+    
+    
       
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
 
 
   <section class='meta'>
@@ -190,13 +194,11 @@
     <div class="meta" id="header-meta">
       
         
-  
-    <h1 class="title">
-      <a href="/2020/02/27/%E4%BD%BF%E7%94%A8git%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE,%E6%8E%A8%E9%80%81%E5%88%B0github%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">
-        使用git管理项目,推送到github远程仓库
-      </a>
-    </h1>
-  
+  <h2 class="title">
+    <a href="/2020/02/27/%E4%BD%BF%E7%94%A8git%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE,%E6%8E%A8%E9%80%81%E5%88%B0github%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">
+      使用git管理项目,推送到github远程仓库
+    </a>
+  </h2>
 
 
       
@@ -217,11 +219,6 @@
     
   </div>
 
-
-          
-        
-          
-            
 
           
         
@@ -248,120 +245,226 @@
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          
-          <blockquote>
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <blockquote>
 <p>准备工作: git软件,github账户</p>
 </blockquote>
-<a id="more"></a> 
-
-<p>第一步:在命令行中<code>cd</code>到项目所在目录,或者<code>shift+鼠标右键</code>在项目根目录打开命令行  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd C:\xxx\xxx\xxx</span><br></pre></td></tr></table></figure>
-
-<p>第二步:在当面目录下执行如下命令</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">// 初始化git仓库</span></span><br></pre></td></tr></table></figure>
-<p>第三步:关联远程仓库</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin url</span><br><span class="line"><span class="comment">// origin是远程仓库url的别称,之后可以直接使用这个别称</span></span><br><span class="line"><span class="comment">// url 是要推送到的仓库地址,推荐使用ssh秘钥形式,免密登录</span></span><br></pre></td></tr></table></figure>
-<p>第四步:把代码提交到暂存区</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"><span class="comment">// 此操作将有过更改的所有文件都添加进暂存区等待提交</span></span><br></pre></td></tr></table></figure>
-
-<p>第五步:提交代码到本地仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'提交信息'</span></span><br></pre></td></tr></table></figure>
-
-<p>第六步: 推送到远程仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin mastar</span><br><span class="line"><span class="comment">// -u参数代表记住本次推送配置,之后推送直接git push即可</span></span><br></pre></td></tr></table></figure>
-
-
-          
-        </div>
-        
-          <br>
-          
-
-
-  <section class='meta' id="footer-meta">
-    <div class='new-meta-box'>
       
         
-          
+          <div class="button readmore">
+            <a href="/2020/02/27/%E4%BD%BF%E7%94%A8git%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE,%E6%8E%A8%E9%80%81%E5%88%B0github%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/git/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> git</a>
+        
+      </div>
+     -->
+  </section>
+</article>
 
+          </div>
         
       
         
-          
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/git/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>git</p></a></div>
 
 
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
         
+  <h2 class="title">
+    <a href="/2020/02/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6%E5%85%A5%E9%97%A8%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6/">
+      微信小程序组件入门初识组件
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Feb 26, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
       
     </div>
   </section>
 
 
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="标签组件"><a href="#标签组件" class="headerlink" title="标签组件"></a>标签组件</h1><ul>
+<li><p><strong>view标签</strong></p>
+<blockquote>
+<p>类似于div标签,有一个特殊属性<code>hover-class=&quot;&quot;</code> 鼠标移入时添加某个类  </p>
+</blockquote>
+      
         
+          <div class="button readmore">
+            <a href="/2020/02/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6%E5%85%A5%E9%97%A8%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
         
-            <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
-                            <h4>
-                                <a href="/2020/02/28/%E5%9F%BA%E4%BA%8ENeteaseCloudMusicApi%E7%9A%84vue%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E9%A1%B9%E7%9B%AE/" rel="prev" title="基于NeteaseCloudMusicApi的vue音乐播放器项目">
-                                  
-                                      基于NeteaseCloudMusicApi的vue音乐播放器项目
-                                  
-                                </a>
-                            </h4>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2020/02/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6%E5%85%A5%E9%97%A8%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6/" rel="prev" title="微信小程序组件入门初识组件">
-                                    
-                                        微信小程序组件入门初识组件
-                                    
-                                </a>
-                            </h4>
-                            
-                        </span>
-                    </section>
-                
-            </div>
+      
+    </div>
+    <!--  -->
+  </section>
+</article>
+
+          </div>
         
-      </section>
-    </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
   
 
 
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/02/22/%E6%96%B0%E7%89%88%E5%8D%9A%E5%AE%A2%E4%B8%8A%E7%BA%BF%E5%95%A6/">
+      新版博客上线啦!
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Feb 22, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>本博客搬家啦!旧版WordPress博客不更新也不维护了,实在是太慢了,回归hexo的怀抱</p>
+<p>本来也考虑使用vuePress 毕竟现在也在做vue技术栈,但是为了更骚气一点,还是使用了hexo ,毕竟插件多嘛~</p>
+<p>旧版博客的内容就不都搬运过来了,会挑一些有用的弄过来</p>
+<p>相对来说是个全新的博客啦,也算是对于裸辞后的我的一种全新开始!要继续努力,加油!记录压力,与鸭梨一起成长</p>
+
+      
+    </div>
+    <!--  -->
+  </section>
+</article>
+
+          </div>
+        
+      
+    
+  </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+          <a class="prev" rel="prev" href="/">
+            <section class="post prev white-box  widget-blur" >
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
+            </section>
+          </a>
+        
+        <p class="current">
+          2 / 2
+        </p>
+        
+      </div>
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
-
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: '使用git管理项目,推送到github远程仓库',
-      tools: true
-    }
-  </script>
+  
 
 
 </div>
@@ -443,27 +546,6 @@
     
       
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  
-    
-      
-    
-      
-        
-
-
-
       
     
       

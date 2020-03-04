@@ -201,6 +201,8 @@
         
           
         
+          
+        
       
     
     
@@ -218,8 +220,8 @@
       
         
   <h2 class="title">
-    <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/">
-      详解Ajax
+    <a href="/2020/03/03/FormData%E5%AF%B9%E8%B1%A1%E5%8F%8A%E4%BD%9C%E7%94%A8/">
+      FormData对象及作用
     </a>
   </h2>
 
@@ -233,7 +235,102 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 3, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h3 id="FormData的作用"><a href="#FormData的作用" class="headerlink" title="FormData的作用"></a>FormData的作用</h3><ol>
+<li><p>模拟html表单</p>
+</li>
+<li><p>异步上传二进制文件</p>
+</li>
+<li><p>只能使用post请求</p>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/03/FormData%E5%AF%B9%E8%B1%A1%E5%8F%8A%E4%BD%9C%E7%94%A8/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
+      
+    </div>
+    <!-- 
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/js/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> js</a>
+        
+      </div>
+     -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/">
+      详解Ajax(基础)
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -273,8 +370,25 @@
       <blockquote>
 <p>Ajax是浏览器提供的一套api, 可以实现页面无刷新更新数据等操作</p>
 </blockquote>
-<p>22333</p>
-
+<h3 id="Ajax-应用场景"><a href="#Ajax-应用场景" class="headerlink" title="Ajax 应用场景"></a>Ajax 应用场景</h3><ol>
+<li><p>页面上拉更多数据</p>
+</li>
+<li><p>列表数据无刷新分页</p>
+</li>
+<li><p>表单项失去焦点数据验证</p>
+</li>
+<li><p>搜索框提示文字下拉列表</p>
+</li>
+<li><p>等等等…</p>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -318,7 +432,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -360,45 +474,16 @@
 <li>暂存区: 临时存放被修改文件</li>
 <li>工作目录: 被git管理的项目目录</li>
 </ol>
-<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3><ol>
-<li>配置提交人姓名: <code>git config --global user.name 提交人姓名</code></li>
-<li>配置提交人邮箱: <code>git config --global user.email 提交人邮箱</code></li>
-<li>查看git配置信息: <code>git config --list</code></li>
-</ol>
-<h3 id="git-提交步骤"><a href="#git-提交步骤" class="headerlink" title="git 提交步骤"></a>git 提交步骤</h3><ol>
-<li>初始化git仓库: <code>git init</code></li>
-<li>查看文件状态: <code>git status</code></li>
-<li>添加文件到暂存区: <code>git add 文件名</code></li>
-<li>向仓库中提交代码: <code>git commit -m 提交信息</code></li>
-<li>查看提交代码: <code>git log</code></li>
-</ol>
-<h3 id="git-撤销"><a href="#git-撤销" class="headerlink" title="git 撤销"></a>git 撤销</h3><ol>
-<li>用暂存区文件,覆盖工作目录中的文件: <code>git checkout 文件名</code></li>
-<li>将文件从暂存区中删除: <code>git rm --chached 文件名</code></li>
-<li>将git仓库中指定的更新记录恢复出来,并覆盖暂存区和工作目录: <code>git reset --hard 提交ID</code></li>
-</ol>
-<h3 id="git-分支"><a href="#git-分支" class="headerlink" title="git 分支"></a>git 分支</h3><ol>
-<li>主分支: <code>master</code> :git自动产生的一条分支</li>
-<li>开发分支:<code>develop</code>: 作为开发的分支,基于<code>mastar</code>分支创建</li>
-<li>功能分支:<code>feature</code>: 作为开发具体功能的分支,基于<code>develop</code>分支创建</li>
-</ol>
-<h3 id="git-分支命令"><a href="#git-分支命令" class="headerlink" title="git 分支命令"></a>git 分支命令</h3><ol>
-<li>查看分支: <code>git branch</code></li>
-<li>创建分支: <code>git branch 分支名称</code> </li>
-<li>切换分支: <code>git checkout 分支名称</code></li>
-<li>创建分支并切换到创建的分支: <code>git checkout -b 分支名</code></li>
-<li>合并分支: <code>git merge 分支名 被合并分支名</code></li>
-<li>删除分支:<code>git branch -d 分支名</code> 注意:合并分支后才可以删除,可以使用-D强制删除</li>
-<li>暂时保存更改,独立于分支,在任何分支可用<ol>
-<li>存储临时改动: <code>git stash</code></li>
-<li>恢复改动: <code>git stash pop</code></li>
-</ol>
-</li>
-</ol>
-<h3 id="git-忽略清单"><a href="#git-忽略清单" class="headerlink" title="git 忽略清单"></a>git 忽略清单</h3><blockquote>
-<p><code>.gitignore</code> 文件中设置不需要被git管理的文件或文件夹</p>
-</blockquote>
-
+<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/03/git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -408,6 +493,92 @@
         
       </div>
      -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/">
+      JS的一些基础面试题(持续更新)
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 2, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h3 id="JS基本数据类型有几种-都是哪些"><a href="#JS基本数据类型有几种-都是哪些" class="headerlink" title="JS基本数据类型有几种?都是哪些?"></a>JS基本数据类型有几种?都是哪些?</h3><blockquote>
+<p>共6种(es6), String, Boolean, Number, Null, Undefined, Symbol</p>
+</blockquote>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
+      
+    </div>
+    <!--  -->
   </section>
 </article>
 
@@ -442,7 +613,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -484,22 +655,15 @@
 <blockquote>
 <p>思路:利用了ES6 <code>Set</code>数据结构中,值不能重复的特性,使用ES6扩展运算符将获得的Set数据放入数组中转换为普通数据,优点是简洁</p>
 </blockquote>
-<h3 id="利用indexOf去重"><a href="#利用indexOf去重" class="headerlink" title="利用indexOf去重"></a>利用indexOf去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = []; <span class="comment">// 创建空的结果数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123; <span class="comment">// 循环原数组, arr[i]就是当前项的值</span></span><br><span class="line">        <span class="keyword">if</span> (result.indexOf(arr[i]) === <span class="number">-1</span>) &#123; <span class="comment">// 判断结果数组中存在不存在当前项的值</span></span><br><span class="line">            result.push(arr[i]) <span class="comment">// 如果不存在, 说明结果数组中没有这个值,就追加进结果数组</span></span><br><span class="line">        &#125;<span class="comment">// 有这个值,(重复了)就不会进入if,直接进行下一次循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路: 新建一个空的结果数组, for循环原数组, 判断结果数组中是否存在当前元素<code>(indexOf: 在数组中查找具体值的索引,没找到返回-1)</code>, 不存在就将值放入结果数组,存在就不会进入if判断</p>
-</blockquote>
-<h3 id="利用includes去重"><a href="#利用includes去重" class="headerlink" title="利用includes去重"></a>利用includes去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = []; <span class="comment">// 创建空的结果数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123; <span class="comment">// 循环原数组, arr[i]就是当前项的值</span></span><br><span class="line">        <span class="keyword">if</span> (!result.includes(arr[i])) &#123; <span class="comment">// 判断结果数组中存在不存在当前项的值</span></span><br><span class="line">            result.push(arr[i]) <span class="comment">// 如果不存在, 说明结果数组中没有这个值,就追加进结果数组</span></span><br><span class="line">        &#125;<span class="comment">// 有这个值,(重复了)就不会进入if,直接进行下一次循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路: 整体思路与利用indexOf相同,`includes的作用是查找数组中是否包含某个值,如果包含返回true</p>
-</blockquote>
-<h3 id="利用filter去重"><a href="#利用filter去重" class="headerlink" title="利用filter去重"></a>利用filter去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    arr.filter(<span class="function">(<span class="params">item,index,arr</span>) =&gt;</span> &#123;</span><br><span class="line">        arr.indexOf(item,<span class="number">0</span>) === index</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路:</p>
-</blockquote>
-
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/02/JS%E4%B8%AD%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -509,6 +673,93 @@
         
       </div>
      -->
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box   reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/03/02/HTML%E4%B8%8ECSS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/">
+      HTML与CSS的一些基础面试题(持续更新)
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Mar 2, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h3 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h3><h4 id="添加了canvas绘图"><a href="#添加了canvas绘图" class="headerlink" title="添加了canvas绘图"></a>添加了canvas绘图</h4><h4 id="新增了语义化标签"><a href="#新增了语义化标签" class="headerlink" title="新增了语义化标签"></a>新增了语义化标签</h4><blockquote>
+<p>header , footer , section , nav , main , aside , article , video , audio</p>
+</blockquote>
+<h4 id="新增了本地存储"><a href="#新增了本地存储" class="headerlink" title="新增了本地存储"></a>新增了本地存储</h4>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/02/HTML%E4%B8%8ECSS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
+      
+    </div>
+    <!--  -->
   </section>
 </article>
 
@@ -543,7 +794,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -584,60 +835,15 @@
 <p>首先我们要知道为何要清除浮动</p>
 <p>浮动的元素会脱离文档流,会导致父元素的高度塌陷,后面的元素挤压上来,影响页面布局.所以需要清除浮动</p>
 </blockquote>
-<h3 id="清除浮动常用的几种方式"><a href="#清除浮动常用的几种方式" class="headerlink" title="清除浮动常用的几种方式"></a>清除浮动常用的几种方式</h3><h4 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h4><p>额外标签法是指在浮动的元素后面添加一个额外的标签,对标签的css属性设置<code>clear:both</code>即可清除浮动,缺点是添加了无意义的标签</p>
-<h4 id="设置父元素css属性-overflow-hidden"><a href="#设置父元素css属性-overflow-hidden" class="headerlink" title="设置父元素css属性 overflow:hidden"></a>设置父元素css属性 overflow:hidden</h4><p>给浮动元素的父元素设置<code>overflow:hidden</code>即可清除浮动</p>
-<h4 id="伪元素清除浮动"><a href="#伪元素清除浮动" class="headerlink" title="伪元素清除浮动"></a>伪元素清除浮动</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="双伪元素清除浮动"><a href="#双伪元素清除浮动" class="headerlink" title="双伪元素清除浮动"></a>双伪元素清除浮动</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::before</span>,<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">    <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    zoom:1; // 兼容ie</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="额外拓展之BFC"><a href="#额外拓展之BFC" class="headerlink" title="额外拓展之BFC"></a>额外拓展之BFC</h3><h3 id="什么是BFC？"><a href="#什么是BFC？" class="headerlink" title="什么是BFC？"></a>什么是BFC？</h3><p>BFC 全称为 块格式化上下文 (Block Formatting Context) 。</p>
-<p>从这个概念里你能看出来什么吗？</p>
-<p>这个名字给我们的信息只有 “块” “格式化” “上下文” 。我们大概可以了解到这个东西是对上下文起作用的。<br> 那里的上下文？？ HTML文档！</p>
-<p> 它大概的作用，貌似是格式化上下文？？可能不是我们通常意义中的格式化。</p>
-<p>我们没有从这个名字中得到太多有用的信息，仅仅知道它是一种功能，针对于 HTML文档 起作用。</p>
-<p>那我们去看看官方是怎么解释的。</p>
-<p><strong>MDN：</strong></p>
-<blockquote>
-<p>一个块格式化上下文（block formatting context） 是Web页面的可视化CSS渲染出的一部分。它是块级盒布局出现的区域，也是浮动层元素进行交互的区域。<br> 一个块格式化上下文由以下之一创建：</p>
-<ul>
-<li>根元素或其它包含它的元素</li>
-<li>浮动元素 (元素的 float 不是 none)</li>
-<li>绝对定位元素 (元素具有 position 为 absolute 或 fixed)</li>
-<li>内联块 (元素具有 display: inline-block)</li>
-<li>表格单元格 (元素具有 display: table-cell，HTML表格单元格默认属性)</li>
-<li>表格标题 (元素具有 display: table-caption, HTML表格标题默认属性)</li>
-<li>具有overflow 且值不是 visible 的块元素，</li>
-<li>display: flow-root</li>
-<li>column-span: all 应当总是会创建一个新的格式化上下文，即便具有 column-span: all 的元素并不被包裹在一个多列容器中。</li>
-<li>一个块格式化上下文包括创建它的元素内部所有内容，除了被包含于创建新的块级格式化上下文的后代元素内的元素。</li>
-</ul>
-<p>块格式化上下文对于定位 (参见 float) 与清除浮动 (参见 clear) 很重要。定位和清除浮动的样式规则只适用于处于同一块格式化上下文内的元素。浮动不会影响其它块格式化上下文中元素的布局，并且清除浮动只能清除同一块格式化上下文中在它前面的元素的浮动。</p>
-</blockquote>
-<p>我们发现一个什么问题！貌似看不懂哎！！</p>
-<p>为什么会产生这样的原因？？</p>
-<p>你能解释一下什么是桌子吗？？</p>
-<p>仔细想想，发现好像并不能合理的解释它。</p>
-<p>BFC 也是如此，只有特性(功能)，没有定义。</p>
-<h3 id="BFC-特性-功能"><a href="#BFC-特性-功能" class="headerlink" title="BFC 特性(功能)"></a>BFC 特性(功能)</h3><ol>
-<li><p>使 BFC 内部浮动元素不会到处乱跑；</p>
-</li>
-<li><p>和浮动元素产生边界。</p>
-<h4 id="使-BFC-内部的浮动元素不会到处乱跑"><a href="#使-BFC-内部的浮动元素不会到处乱跑" class="headerlink" title="使 BFC 内部的浮动元素不会到处乱跑"></a>使 BFC 内部的浮动元素不会到处乱跑</h4></li>
-</ol>
-<p>在正常的文档流中，块级元素是按照从上自下，内联元素从左到右的顺序排列的。</p>
-<p>如果我给里面的元素一个 float 或者绝对定位，它就会脱离普通文档流中</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/6874766-b1004d68354da7a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640/format/webp" alt="img"> </p>
-<p>此时如果我们还想让外层元素包裹住内层元素该如果去做？？ </p>
-<p>让外层元素产生一个 BFC 。(产生 BFC 的方法 MDN 文档里有写)</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/6874766-6d653a57e10b289d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/634/format/webp" alt="img"> </p>
-<p><strong>这就是 BFC 的第一个作用：使 BFC 内部的浮动元素不会到处乱跑。</strong> </p>
-<p> <strong>所以到底什么是BFC呢?</strong></p>
-<p>简单的来说：BFC就是一个css的一个布局概念，是一个<strong>独立的区域</strong>，是一个<strong>环境</strong>。 </p>
-<p> <strong>触发BFC的条件</strong><br>满足下列条件之一就可以触发BFC</p>
-<p>1：根元素，即html元素<br>2：float的值不为none<br>3：overflow的值不为visible<br>4：display的值为inline-block、table-cell、table-caption<br>5：position的值为absolute或者fixed</p>
-
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/01/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -681,7 +887,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -718,101 +924,16 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h3 id="1-h5新标签"><a href="#1-h5新标签" class="headerlink" title="1. h5新标签"></a>1. h5新标签</h3><p>header 头部标签</p>
-<p>nav 导航标签</p>
-<p>aside 侧边栏标签</p>
-<p>section 块级标签</p>
-<p>article 内容标签</p>
-<p>audio 音频标签 </p>
-<p>footer 尾部标签</p>
-<p>video 视频标签 </p>
-<h3 id="2-input新增属性"><a href="#2-input新增属性" class="headerlink" title="2. input新增属性"></a>2. input新增属性</h3><p>email 邮箱表单</p>
-<p>tel 电话表单</p>
-<p>number 数字表单</p>
-<p>date 日期表单</p>
-<p>url 网址表单</p>
-<p>time 时间表单</p>
-<p>moon 月份表单</p>
-<p>search 搜索框</p>
-<p>color 颜色选择器</p>
-<h3 id="3-表单新增属性"><a href="#3-表单新增属性" class="headerlink" title="3.表单新增属性"></a>3.表单新增属性</h3><p>required 设置此属性 必须填写内容才可以提交</p>
-<p>placeholder 提示文本</p>
-<p>autofocus 自动获取焦点</p>
-<p>autocomplete 自动完成 属性默认是on off关闭</p>
-<p>multiple 多选文件上传</p>
-<h3 id="4-C3选择器"><a href="#4-C3选择器" class="headerlink" title="4.C3选择器"></a>4.C3选择器</h3><h5 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h5><blockquote>
-<p>选中元素的属性,属性选择器权重为10</p>
-</blockquote>
-<ul>
-<li>E[attr]</li>
-<li>E[attr=”value”]</li>
-<li>E[attr^=”value”]</li>
-<li>E[attr$=”value”]</li>
-<li>E[attr*=”value”]</li>
-</ul>
-<h5 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h5><blockquote>
-<p>nth-child: 选择父元素中第n个子元素,伪类选择器,权重为10</p>
-</blockquote>
-<ul>
-<li><code>E:frist-child</code></li>
-<li>E:last-child</li>
-<li>E:nth-child(n)</li>
-<li>E:nth-child(odd/even)</li>
-<li>E:nth-child(5n)</li>
-</ul>
-<h5 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h5><blockquote>
-<p>默认行内元素 必须填写content 权重为1</p>
-</blockquote>
-<ul>
-<li>E::before </li>
-<li>E::after </li>
-</ul>
-<h3 id="5-过渡-transition"><a href="#5-过渡-transition" class="headerlink" title="5.过渡 transition"></a>5.过渡 transition</h3><p>过渡是CSS3中具有颠覆性的特征之一，我们可以为元素添加效果。</p>
-<p>过渡动画：是从一个状态渐渐的过渡到另外一个状态</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">transition 简写:要过渡的属性  花费时间   运动曲线   何时开始</span><br><span class="line">transition: all <span class="number">0.6</span>s ease <span class="number">0</span>    all(所有属性) <span class="number">0.6</span>s(<span class="number">0.6</span>秒) ease(平滑) <span class="number">0</span>(开始时间) 可省略后两项</span><br><span class="line">transition-property: 规定应用过渡的CSS属性的名称。</span><br><span class="line">transition-duration: 定义过渡效果花费的时间。默认是<span class="number">0</span>。</span><br><span class="line">transition-timing-<span class="function"><span class="keyword">function</span>: 过渡效果的时间曲线。默认是“<span class="title">ease</span>" 包括:<span class="title">linear</span>：线性 <span class="title">ease</span>-<span class="title">in</span>: 由慢到快 <span class="title">ease</span>-<span class="title">out</span>: 由快到慢。</span></span><br><span class="line"><span class="function"><span class="title">transition</span>-<span class="title">delay</span>: 规定过渡效果何时开始。默认是0。</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-转换-transform"><a href="#6-转换-transform" class="headerlink" title="6.转换 transform"></a>6.转换 transform</h3><h5 id="位移-translate"><a href="#位移-translate" class="headerlink" title="位移 translate"></a>位移 translate</h5><blockquote>
-<p> 指定对象2D位移。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 </p>
-</blockquote>
-<p> translateX()：指定对象X轴的（水平方向）位移 </p>
-<p> translatY()：指定对象Y轴的（垂直方向）位移</p>
-<h5 id="缩放-scale"><a href="#缩放-scale" class="headerlink" title="缩放 scale"></a>缩放 scale</h5><blockquote>
-<p>指定对象的2D缩放。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值 </p>
-</blockquote>
-<p>scalex()：指定对象X轴的（水平方向）缩放</p>
-<p>scaley()：指定对象Y轴的（垂直方向）缩放</p>
-<h5 id="旋转-rotate"><a href="#旋转-rotate" class="headerlink" title="旋转 rotate"></a>旋转 rotate</h5><blockquote>
-<p>指定对象2D旋转。单位为度数(deg) 默认按中心点旋转 可以使用origin 改变中心点位置 </p>
-</blockquote>
-<p>旋转中心点<code>origin</code> 写法为<code>transform-origin</code>：该属性提供2个参数值。</p>
-<p>如果提供两个，第一个用于横坐标（x），第二个用于纵坐标（y）。</p>
-<p>如果只提供一个，该值将用于横坐标；纵坐标将默认为<code>center</code>可以写``left right top bottom `</p>
-<h5 id="transform示例代码"><a href="#transform示例代码" class="headerlink" title="transform示例代码"></a>transform示例代码</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">位移 transform:translate(<span class="number">100</span>px,<span class="number">100</span>px)  水平移动<span class="number">100</span>像素,垂直移动<span class="number">100</span>像素 ---单位为像素</span><br><span class="line">缩放 transform:scale(<span class="number">1.1</span>,<span class="number">1.1</span>)  水平缩放<span class="number">1.1</span>倍 垂直缩放<span class="number">1.1</span>倍 ---单位为倍数</span><br><span class="line">旋转 transform:rotate(<span class="number">360</span>deg)  顺时针<span class="number">360</span>度旋转 ---单位为度数</span><br><span class="line">旋转中心点 transform-origin(right top)  以右上角为原点旋转 ---单位为方位也可以是像素</span><br><span class="line">倾斜 transform:skew(<span class="number">30</span>deg) 倾斜<span class="number">30</span>度  ---单位为度数</span><br></pre></td></tr></table></figure>
-
-<h3 id="7-动画-animation"><a href="#7-动画-animation" class="headerlink" title="7.动画 animation"></a>7.动画 animation</h3><blockquote>
-<p>动画简写:animation：动画名称 花费时间 运动曲线 何时开始 播放次数 是否反方向 </p>
-</blockquote>
-<p>使用语法:先定义关键帧 然后调用 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">定义动画 使用@keyframes</span><br><span class="line">@keyframes 动画名 &#123;</span><br><span class="line">    0%&#123;</span><br><span class="line">        动画开始状态</span><br><span class="line">    &#125;</span><br><span class="line">    100%&#123;</span><br><span class="line">        动画结束状态</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">可以使用from to </span><br><span class="line">@keyframes 动画名 &#123;</span><br><span class="line">    from&#123;</span><br><span class="line">        动画开始状态</span><br><span class="line">    &#125;</span><br><span class="line">    to&#123;</span><br><span class="line">        动画结束状态</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">动画调用</span><br><span class="line">animation-name:动画名(必填)</span><br><span class="line">animation-duration:动画持续时间(必填)</span><br><span class="line">animation-timing-function:速度曲线 常用属性 linear ease ease-out steps</span><br><span class="line">animation-iteration-count:动画次数 常用属性 infinite 无限</span><br><span class="line">animation-direction:逆向播放 常用属性 alternate 逆向</span><br><span class="line">animation-delay:延迟播放 单位s ms 时间单位</span><br><span class="line">animation-fill-mode:动画结束后的状态 常用属性forwards 停止在动画结束的位置 </span><br><span class="line">animation-play-status:paused 暂停动画(通常配合鼠标经过使用)</span><br><span class="line"></span><br><span class="line">动画属性简写:名字 时间 曲线 延迟 次数 逆向 结束状态</span><br><span class="line">速度曲线中 steps(number) 步数 用来控制完成动画需要多少步</span><br></pre></td></tr></table></figure>
-
-<h3 id="8-3D转换-transform"><a href="#8-3D转换-transform" class="headerlink" title="8.3D转换 transform"></a>8.3D转换 transform</h3><h5 id="位移-translate3d"><a href="#位移-translate3d" class="headerlink" title="位移 translate3d"></a>位移 translate3d</h5><p>​    <code>translate3d(x,y,z)</code> 可以向着z轴移动 近大远小 需要透视属性才能观察到 </p>
-<h5 id="透视-perspective"><a href="#透视-perspective" class="headerlink" title="透视 perspective"></a>透视 perspective</h5><p>​    单位px 就是视距 设置元素被查看位置的视图 </p>
-<h5 id="旋转-rotate-1"><a href="#旋转-rotate-1" class="headerlink" title="旋转 rotate"></a>旋转 rotate</h5><p>​    <code>rotateX(deg)</code> 沿着x轴旋转 </p>
-<p>​    <code>rotateY(deg)</code> 沿着y轴旋转 </p>
-<p>​    <code>rotateZ(deg)</code> 沿着z轴旋转 效果和<code>rotate(deg)</code>相似 </p>
-<p>​    <code>rotate3d(x,y,z,deg)</code> 矢量旋转 </p>
-<h5 id="3d呈现"><a href="#3d呈现" class="headerlink" title="3d呈现"></a>3d呈现</h5><p>​     <code>transform-style:perserve-3d</code>  让子盒子保留3d效果 给父盒子加 </p>
-<h3 id="9-背景渐变"><a href="#9-背景渐变" class="headerlink" title="9. 背景渐变"></a>9. 背景渐变</h3><blockquote>
-<p> background:-webit-linear-gradient（渐变的起始位置，起始颜色，结束颜色） </p>
-<p> 例:background:-webit-linear-gradient(top,red,green)  从顶部开始 从红到绿的渐变 </p>
-<p>例:background:-webit-linear-gradient(left top,red,green) 从左上角开始 从红到绿的渐变 </p>
-<p>例:background:-webit-linear-gradient(top,red 0%,green 50%,blue 100%)  从顶部开始 开始是红色 到50%是绿色 最终是蓝色  </p>
-</blockquote>
-<h3 id="10-盒子透明-opacity"><a href="#10-盒子透明-opacity" class="headerlink" title="10. 盒子透明 opacity"></a>10. 盒子透明 opacity</h3><blockquote>
-<p>opacity:0.5  盒子半透明,盒子内容,文本会透明 CSS1</p>
-<p>rgba(0,0,0,.5) 背景半透明,背景透明.内容文字等不会透明  CSS3 </p>
-</blockquote>
-
+      <p>记录了基础H5C3的一些新特性</p>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/02/29/H5C3%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!--  -->
@@ -850,7 +971,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -895,63 +1016,15 @@
 </blockquote>
 </li>
 <li><p>通过可视化UI面板直接查看报告(推荐) </p>
-</li>
-</ol>
-<h3 id="2-通过vue-config-js-修改-webpack的默认配置"><a href="#2-通过vue-config-js-修改-webpack的默认配置" class="headerlink" title="2. 通过vue.config.js 修改 webpack的默认配置"></a>2. 通过vue.config.js 修改 webpack的默认配置</h3><p>通过vue-cli 3.0 创建的项目,默认隐藏了所有webpack的配置项目,目的是为了屏蔽项目的配置过程</p>
-<p>如果有需要修改webpack的需求,可以在项目根目录创建 vue.config.js,从而做自定义的配置</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line">基本格式</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="comment">//选项</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-为开发模式和发布模式指定不同的打包入口"><a href="#3-为开发模式和发布模式指定不同的打包入口" class="headerlink" title="3.为开发模式和发布模式指定不同的打包入口"></a>3.为开发模式和发布模式指定不同的打包入口</h3><p>默认情况下,vue项目的开发模式和发布模式,共用一个打包的入口文件,即 src/main.js</p>
-<p>可以分离为2种模式</p>
-<p>开发模式入口文件 src/main-dev.js</p>
-<p>发布模式入口文件 src/main-prod.js</p>
-<p>那么如何分离呢?</p>
-<h4 id="3-1-使用configureWebpack和chainWebpack"><a href="#3-1-使用configureWebpack和chainWebpack" class="headerlink" title="3.1 使用configureWebpack和chainWebpack"></a>3.1 使用configureWebpack和chainWebpack</h4><p>在vue.config.js导出的配置对象中,新增configureWebpack或者chainWebpack来自定义Webpack打包配置</p>
-<p><strong>configureWebpack和chainWebpack 作用相同,修改的方式不同</strong></p>
-<p>1  chainWebpack  通过链式编程来修改Webpack配置</p>
-<p>2  configureWebpack 通过操作对象的形式来修改Webpack配置</p>
-<h4 id="3-2-通过-chainWebpack-自定义打包入口"><a href="#3-2-通过-chainWebpack-自定义打包入口" class="headerlink" title="3.2 通过 chainWebpack 自定义打包入口"></a>3.2 通过 chainWebpack 自定义打包入口</h4><p>代码示例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	chainWebpack: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">		config.when(process.env.NODE_ENV === <span class="string">'production'</span>, config =&gt; &#123;</span><br><span class="line">			config.entry(<span class="string">'app'</span>).clear().add(<span class="string">'./src/main-prod.js'</span>)</span><br><span class="line">		&#125;)</span><br><span class="line">		config.when(process.env.NODE_ENV === <span class="string">'development'</span>, config =&gt; &#123;</span><br><span class="line">			config.entry(<span class="string">'app'</span>).clear().add(<span class="string">'./src/main-dev.js'</span>)</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-通过-externals-加载外部-CDN-资源"><a href="#4-通过-externals-加载外部-CDN-资源" class="headerlink" title="4 .通过 externals 加载外部 CDN 资源"></a>4 .通过 externals 加载外部 CDN 资源</h3><p>​    默认情况下，通过 import 语法导入的第三方依赖包，最终会被打包合并到同一个文件中，从而导致打包成功后，单文件体积过大的问题。</p>
-<p>​    为了解决上述问题，可以通过 webpack 的 externals 节点，来配置并加载外部的 CDN 资源。凡是声明在externals 中的第三方依赖包，都不会被打包。</p>
-<p>示例代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">config.set(<span class="string">'externals'</span>, &#123;</span><br><span class="line">	vue: <span class="string">'Vue'</span>,</span><br><span class="line">	<span class="string">'vue-router'</span>: <span class="string">'VueRouter'</span>,</span><br><span class="line">	axios: <span class="string">'axios'</span>,</span><br><span class="line">	lodash: <span class="string">'_'</span>,</span><br><span class="line">	echarts: <span class="string">'echarts'</span>,</span><br><span class="line">	nprogress: <span class="string">'NProgress'</span>,</span><br><span class="line">	<span class="string">'vue-quill-editor'</span>: <span class="string">'VueQuillEditor'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p><strong>然后需要在public 下面的index.html中 使用cdn引入对应的资源 !!!重点</strong></p>
-<p>参考配置</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="comment">// 基本路径</span></span><br><span class="line">    baseUrl: <span class="string">'/'</span>,</span><br><span class="line">    <span class="comment">// 输出文件目录</span></span><br><span class="line">    outputDir: <span class="string">'dist'</span>,</span><br><span class="line">    <span class="comment">// eslint-loader 是否在保存的时候检查</span></span><br><span class="line">    lintOnSave: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// webpack配置</span></span><br><span class="line">    chainWebpack: <span class="function"><span class="params">()</span> =&gt;</span> &#123; &#125;,</span><br><span class="line">    configureWebpack: <span class="function"><span class="params">()</span> =&gt;</span> &#123; &#125;,</span><br><span class="line">    <span class="comment">// 生产环境是否生成 sourceMap 文件</span></span><br><span class="line">    productionSourceMap: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// css相关配置</span></span><br><span class="line">    css: &#123;</span><br><span class="line">        <span class="comment">// 是否使用css分离插件 ExtractTextPlugin</span></span><br><span class="line">        extract: <span class="literal">true</span>,</span><br><span class="line">        <span class="comment">// 开启 CSS source maps?</span></span><br><span class="line">        sourceMap: <span class="literal">false</span>,</span><br><span class="line">        <span class="comment">// css预设器配置项</span></span><br><span class="line">        loaderOptions: &#123;&#125;,</span><br><span class="line">        <span class="comment">// 启用 CSS modules for all css / pre-processor files.</span></span><br><span class="line">        modules: <span class="literal">false</span></span><br><span class="line">    &#125;,</span><br><span class="line">    parallel: <span class="built_in">require</span>(<span class="string">'os'</span>).cpus().length &gt; <span class="number">1</span>,</span><br><span class="line">    pwa: &#123;&#125;,</span><br><span class="line">    <span class="comment">// webpack-dev-server 相关配置</span></span><br><span class="line">    devServer: &#123;</span><br><span class="line">        open: <span class="literal">true</span>,                                 <span class="comment">//配置自动启动浏览器</span></span><br><span class="line">        host: <span class="string">'localhost'</span>,</span><br><span class="line">        port: <span class="number">8080</span>,                                 <span class="comment">// 端口号</span></span><br><span class="line">        https: <span class="literal">false</span>,</span><br><span class="line">        hotOnly: <span class="literal">false</span>,                             <span class="comment">// https:&#123;type:Boolean&#125;</span></span><br><span class="line">        proxy: &#123;                                        <span class="comment">// 配置跨域</span></span><br><span class="line">            <span class="string">'/api'</span>:&#123;</span><br><span class="line">                target:<span class="string">'http://xxx.xx.xxx.xxx:8080'</span>, <span class="comment">//源地址</span></span><br><span class="line">                changeOrigin:<span class="literal">true</span>,                  <span class="comment">//改变源</span></span><br><span class="line">                ws:<span class="literal">true</span>,                            <span class="comment">//是否代理websockets</span></span><br><span class="line">                pathRewrite:&#123;</span><br><span class="line">                    <span class="string">'^/api'</span>:<span class="string">''</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,                                           <span class="comment">// 配置跨域处理,只有一个代理</span></span><br><span class="line">        before: <span class="function"><span class="params">app</span> =&gt;</span> &#123; &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 第三方插件配置</span></span><br><span class="line">    pluginOptions: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-通过-CDN-优化-ElementUI-的打包"><a href="#5-通过-CDN-优化-ElementUI-的打包" class="headerlink" title="5.通过 CDN 优化 ElementUI 的打包"></a>5.通过 CDN 优化 ElementUI 的打包</h3><p>虽然在开发阶段，我们启用了 element-ui 组件的按需加载，尽可能的减少了打包的体积，但是那些被按需加载的组件，还是占用了较大的文件体积。此时，我们可以将 element-ui 中的组件，也通过 CDN 的形式来加载，这样能够进一步减小打包后的文件体积。</p>
-<p>具体操作流程如下：</p>
-<p>① 在 main-prod.js 中，注释掉 element-ui 按需加载的代码</p>
-<p>② 在 index.html 的头部区域中，通过 CDN 加载 element-ui 的 js 和 css 样式</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- element-ui 的样式表文件 --&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"https://cdn.staticfile.org/element-ui/2.8.2/theme</span></span><br><span class="line"><span class="string">chalk/index.css"</span> /&gt;</span><br><span class="line">&lt;!-- element-ui 的 js 文件 --&gt;</span><br><span class="line">&lt;script src=<span class="string">"https://cdn.staticfile.org/element-ui/2.8.2/index.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-首页内容定制"><a href="#6-首页内容定制" class="headerlink" title="6.首页内容定制"></a>6.首页内容定制</h3><p>不同的打包环境下，首页内容可能会有所不同。我们可以通过插件的方式进行定制，插件配置如下 </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">chainWebpack: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">	config.when(process.env.NODE_ENV === <span class="string">'production'</span>, config =&gt; &#123;</span><br><span class="line">		config.plugin(<span class="string">'html'</span>).tap(<span class="function"><span class="params">args</span> =&gt;</span> &#123;</span><br><span class="line">		args[<span class="number">0</span>].isProd = <span class="literal">true</span></span><br><span class="line">		<span class="keyword">return</span> args</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br><span class="line">config.when(process.env.NODE_ENV === <span class="string">'development'</span>, config =&gt; &#123;</span><br><span class="line">	config.plugin(<span class="string">'html'</span>).tap(<span class="function"><span class="params">args</span> =&gt;</span> &#123;</span><br><span class="line">		args[<span class="number">0</span>].isProd = <span class="literal">false</span></span><br><span class="line">		<span class="keyword">return</span> args</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 首页内容定制</span></span><br><span class="line"><span class="comment">// 在 public/index.html 首页中，可以根据 isProd 的值，来决定如何渲染页面结构：</span></span><br><span class="line">&lt;!– 按需渲染页面的标题 --&gt;</span><br><span class="line">&lt;title&gt;&lt;%= htmlWebpackPlugin.options.isProd ? <span class="string">''</span> : <span class="string">'dev - '</span> %&gt;电商后台管理系统&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;!– 按需加载外部的 CDN 资源 --&gt;</span></span><br><span class="line"><span class="regexp">&lt;% if(htmlWebpackPlugin.options.isProd) &#123; %&gt;</span></span><br><span class="line"><span class="regexp">&lt;!—通过 externals 加载的外部 CDN 资源--&gt;</span></span><br><span class="line"><span class="regexp">&lt;% &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="7-路由懒加载"><a href="#7-路由懒加载" class="headerlink" title="7.路由懒加载"></a>7.路由懒加载</h3><p>当打包构建项目时，JavaScript 包会变得非常大，影响页面加载。如果我们能把不同路由对应的组件分割成</p>
-<p>不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了。</p>
-<p>具体需要 3 步：</p>
-<p>① 安装 @babel/plugin-syntax-dynamic-import 包。</p>
-<p>② 在 babel.config.js 配置文件中声明该插件</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  presets: [<span class="string">'@vue/cli-plugin-babel/preset'</span>],</span><br><span class="line">  plugins: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">'component'</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        libraryName: <span class="string">'element-ui'</span>,</span><br><span class="line">        styleLibraryName: <span class="string">'theme-chalk'</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">'@babel/plugin-syntax-dynamic-import'</span> <span class="comment">// 这条是声明的</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>③ 将路由改为按需加载的形式，示例代码如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Foo = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: "group-foo" */</span> <span class="string">'./Foo.vue'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Bar = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: "group-foo" */</span> <span class="string">'./Bar.vue'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Baz = <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: "group-boo" */</span> <span class="string">'./Baz.vue'</span>)</span><br></pre></td></tr></table></figure>
-
-<p>关于路由懒加载的详细文档，可参考如下链接：</p>
-<p><a href="https://router.vuejs.org/zh/guide/advanced/lazy-loading.html" target="_blank" rel="noopener">https://router.vuejs.org/zh/guide/advanced/lazy-loading.html</a></p>
-<h3 id="8-使用pm2-管理应用"><a href="#8-使用pm2-管理应用" class="headerlink" title="8.使用pm2 管理应用"></a>8.使用pm2 管理应用</h3><ol>
-<li>在服务器中安装pm2: <code>npm i pm2 -g</code></li>
-<li>启动项目:<code>pm2 start 文件</code></li>
-<li>查看运行项目:<code>pm2 ls</code></li>
-<li>重启项目:<code>pm2 restart 文件名</code></li>
-<li>停止项目:<code>pm2 stop 文件名</code></li>
-<li>删除项目:<code>pm2 delete 文件名</code></li>
-</ol>
-
+      
+        
+          <div class="button readmore">
+            <a href="/2020/02/29/Vue%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96%E5%92%8C%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!--  -->
@@ -989,7 +1062,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -1027,343 +1100,20 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       <h2 id="项目描述"><a href="#项目描述" class="headerlink" title="项目描述"></a>项目描述</h2><ol>
-<li>本项目是基于网易云音乐API的QQ音乐播放器(ヽﾐ ´∀｀ﾐノ＜)</li>
-<li>本项目只完成了基础的页面模板和功能,适合刚刚开始学习vue的新人进行扩展练习</li>
-<li>项目完全按照自己的想法实现的,没有参考任何资料,所以写的比较low,有很大优化空间</li>
-</ol>
-<h3 id="项目技术栈"><a href="#项目技术栈" class="headerlink" title="项目技术栈"></a>项目技术栈</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue,vuex,vueRoter,scss,axios</span><br></pre></td></tr></table></figure>
-
-<h3 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;sroxck&#x2F;vue-music</span><br></pre></td></tr></table></figure>
-
-<h3 id="网易云音乐APi"><a href="#网易云音乐APi" class="headerlink" title="网易云音乐APi"></a>网易云音乐APi</h3><p><a href="https://github.com/Binaryify/NeteaseCloudMusicApi" target="_blank" rel="noopener">NeteaseCloudMusicApi</a></p>
-<h3 id="项目截图"><a href="#项目截图" class="headerlink" title="项目截图"></a>项目截图</h3><p><img src="https://github.com/sroxck/vue-music/blob/master/note/1.png?raw=true" alt="">)<img src="https://github.com/sroxck/vue-music/blob/master/note/2.png?raw=true" alt="">)<img src="https://github.com/sroxck/vue-music/blob/master/note/3.png?raw=true" alt="">)<img src="https://github.com/sroxck/vue-music/blob/master/note/4.png?raw=true" alt=""></p>
-<h3 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h3><ol>
-<li>首先需要开启网易云音乐API服务,请先下载<a href="https://github.com/Binaryify/NeteaseCloudMusicApi" target="_blank" rel="noopener">NeteaseCloudMusicApi</a>并开启服务</li>
-<li>打开本项目 <code>npm install</code></li>
-<li>运行服务 <code>npm run serve</code></li>
-<li>访问 <code>localhost:8080</code> 查看服务</li>
-</ol>
-
+<li><p>本项目是基于网易云音乐API的QQ音乐播放器(ヽﾐ ´∀｀ﾐノ＜)</p>
+</li>
+<li><p>本项目只完成了基础的页面模板和功能,适合刚刚开始学习vue的新人进行扩展练习</p>
+</li>
+<li><p>项目完全按照自己的想法实现的,没有参考任何资料,所以写的比较low,有很大优化空间</p>
       
-    </div>
-    <!--  -->
-  </section>
-</article>
-
+        
+          <div class="button readmore">
+            <a href="/2020/02/28/%E5%9F%BA%E4%BA%8ENeteaseCloudMusicApi%E7%9A%84vue%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E9%A1%B9%E7%9B%AE/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
           </div>
         
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box   reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2020/02/27/%E4%BD%BF%E7%94%A8git%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE,%E6%8E%A8%E9%80%81%E5%88%B0github%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">
-      使用git管理项目,推送到github远程仓库
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    
-      <a href="http://yoursite.com" rel="nofollow">
-        
-          <i class="fas fa-user" aria-hidden="true"></i>
-        
-        <p>Sroxck</p>
-      </a>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>消息发布于：Feb 27, 2020</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <blockquote>
-<p>准备工作: git软件,github账户</p>
-</blockquote>
-<p>第一步:在命令行中<code>cd</code>到项目所在目录,或者<code>shift+鼠标右键</code>在项目根目录打开命令行  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd C:\xxx\xxx\xxx</span><br></pre></td></tr></table></figure>
-
-<p>第二步:在当面目录下执行如下命令</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">// 初始化git仓库</span></span><br></pre></td></tr></table></figure>
-<p>第三步:关联远程仓库</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin url</span><br><span class="line"><span class="comment">// origin是远程仓库url的别称,之后可以直接使用这个别称</span></span><br><span class="line"><span class="comment">// url 是要推送到的仓库地址,推荐使用ssh秘钥形式,免密登录</span></span><br></pre></td></tr></table></figure>
-<p>第四步:把代码提交到暂存区</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"><span class="comment">// 此操作将有过更改的所有文件都添加进暂存区等待提交</span></span><br></pre></td></tr></table></figure>
-
-<p>第五步:提交代码到本地仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'提交信息'</span></span><br></pre></td></tr></table></figure>
-
-<p>第六步: 推送到远程仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin mastar</span><br><span class="line"><span class="comment">// -u参数代表记住本次推送配置,之后推送直接git push即可</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <!-- 
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/git/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> git</a>
-        
-      </div>
-     -->
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box   reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2020/02/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%BB%84%E4%BB%B6%E5%85%A5%E9%97%A8%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6/">
-      微信小程序组件入门初识组件
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    
-      <a href="http://yoursite.com" rel="nofollow">
-        
-          <i class="fas fa-user" aria-hidden="true"></i>
-        
-        <p>Sroxck</p>
-      </a>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>消息发布于：Feb 26, 2020</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <h1 id="标签组件"><a href="#标签组件" class="headerlink" title="标签组件"></a>标签组件</h1><ul>
-<li><p><strong>view标签</strong></p>
-<blockquote>
-<p>类似于div标签,有一个特殊属性<code>hover-class=&quot;&quot;</code> 鼠标移入时添加某个类  </p>
-</blockquote>
-</li>
-<li><p><strong>text标签</strong></p>
-<blockquote>
-<p>只能嵌套text标签,在小程序中,只有这个标签可以长按文字复制,需要添加<code>selectable</code>属性,添加<code>decode</code>属性,可以对空格,回车进行编码     </p>
-</blockquote>
-</li>
-<li><p><strong>image标签</strong></p>
-<ul>
-<li>图片标签,image组件默认宽度320px,高度240px</li>
-<li>语法: <code>&lt;image src=&quot;路径&quot;&gt;</code><ul>
-<li>属性: <code>mode</code> 决定图片内容如何和图片标签宽高做适配,</li>
-<li>默认值: <code>scaleToFill</code> 不保持比例缩放,让图片完成拉伸至填满image元素</li>
-<li>可选值:<code>aspectFit</code> 保持宽高比,保证图片的长的一边能充满image元素,页面轮播图常用属性</li>
-<li>可选值:<code>aspectFill</code> 保持宽高比,保证图片的短的一边能充满image元素,比较少用</li>
-<li>可选值:<code>widthFix</code> 相当于web中图片的模式,宽度指定后,高度会按比例来调整 比较常用</li>
-</ul>
-</li>
-<li>小程序中的图片,支持懒加载,在标签中加入<code>lazy-load</code>属性即可,当图片出现在视口的上下三屏的高度之内的时候,开始加载图片</li>
-</ul>
-</li>
-<li><p><strong>swiper标签</strong></p>
-<blockquote>
-<p>微信内置的轮播图组件</p>
-</blockquote>
-<ul>
-<li>轮播图外层容器使用 <code>swiper</code></li>
-<li>每一个轮播项使用 <code>swiper-item</code></li>
-<li><code>swiper</code>标签存在默认样式<code>width: 100%</code> <code>height: 150px</code></li>
-<li><code>swiper</code>高度无法实现由内容撑开</li>
-<li>使用原图的宽高,等比例给<code>swiper</code>定宽高</li>
-<li>算法: swiper宽度 / swiper 高度 = 原图宽度 / 原图高度</li>
-<li>二次算法: swiper高度 = swiper宽度 * 原图高度 / 原图宽度</li>
-<li>三次算法: swiper高 = 100vw * 原图高 / 原图宽 </li>
-<li>autoplay 自动播放</li>
-<li>interval 图片切换间隔时间</li>
-<li>circular 无缝轮播</li>
-<li>indicator-dots 显示小圆点指示器</li>
-<li>indicator-color 小圆点的颜色</li>
-<li>indicator-active-color 小圆点选中的颜色</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>navigator标签</strong></p>
-<blockquote>
-<p>导航组件,类似超链接标签</p>
-</blockquote>
-<ul>
-<li>使用<code>url</code>属性规定跳转到哪个页面</li>
-<li><code>nacigator</code>是块级标签</li>
-<li><code>target</code>属性规定跳转到当前的小程序还是其他小程序,默认<code>self</code>,在本小程序上跳转,<code>miniPProgram</code> 跳转到其他小程序</li>
-<li><code>open-type</code>跳转的方式<ul>
-<li><code>navigate</code> 默认值 保留当前页面,跳转到应用内的某个页面,不能跳转到tabBar页面</li>
-<li><code>redirect</code> 关闭当前页面,跳转到应用内的某个页面,不能跳转到tabBar页面</li>
-<li><code>switchTab</code> 跳转到tabBar页面,并关闭其他所有非tabBar页面</li>
-<li><code>reLaunch</code> 关闭所有页面,打开到应用内的某个页面,可以随便跳转</li>
-<li><code>navigateBack</code> 关闭当前页面,返回上一级页面或多级页面,可通过<code>getCurrentPages()</code>获取当前的页面栈,决定要返回几层</li>
-<li><code>exit</code> 退出小程序,<code>target=&quot;miniPProgram&quot;</code>时生效</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>rich-text标签</strong></p>
-<blockquote>
-<p>富文本标签,可以将字符串解析成对应标签,类似vue中的<code>v-html</code>功能</p>
-</blockquote>
-<ul>
-<li>通过<code>nodes</code>属性来实现<ul>
-<li>接收标签字符串 最常用</li>
-<li>接收对象数组</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>button标签</strong></p>
-<ul>
-<li>外观属性<ul>
-<li><code>size</code>控制按钮的大小 值:default,mini,</li>
-<li><code>type</code>控制按钮的类型 值:default=&gt;灰色,primary=&gt;绿色,warn=&gt;红色</li>
-<li><code>plain</code>控制按钮是否镂空 值: false,true</li>
-<li><code>loading</code>是否在按钮前面添加等待图标 值: false,true</li>
-</ul>
-</li>
-<li>开放属性<ul>
-<li>contact 直接打开  客服对话功能  需要在微信小程序的后台配置  只能够通过真机调试来打开 </li>
-<li>share 转发当前的小程序 到微信朋友中   不能把小程序 分享到 朋友圈 </li>
-<li>getPhoneNumber 获取当前用户的手机号码信息 结合一个事件来使用  不是企业的小程序账号 没有权限来获取用户的手机号码 <ul>
-<li>1 绑定一个事件 bindgetphonenumber </li>
-<li>2 在事件的回调函数中  通过参数来获取信息 </li>
-<li>3 获取到的信息  已经加密过了 </li>
-</ul>
-</li>
-<li>getUserInfo 获取当前用户的个人信息<ul>
-<li>1 使用方法 类似 获取用户的手机号码</li>
-<li>2 可以直接获取 不存在加密的字段 </li>
-</ul>
-</li>
-<li>launchApp 在小程序当中 直接打开 app<ul>
-<li>1 需要现在 app中 通过app的某个链接 打开 小程序</li>
-<li>2 在小程序 中 再通过 这个功能 重新打开 app</li>
-<li>3 找到 京东的app 和 京东的小程序  </li>
-</ul>
-</li>
-<li>openSetting 打开小程序内置的 授权页面<ul>
-<li>授权页面中 只会出现 用户曾经点击过的 权限 </li>
-</ul>
-</li>
-<li>feedback 打开 小程序内置的 意见反馈页面 <ul>
-<li>只能够通过真机调试来打开 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>icon标签</strong></p>
-<blockquote>
-<p>小程序中的字体图标</p>
-</blockquote>
-<ul>
-<li>type: 图标的类型<ul>
-<li>有效值: <code>&#39;success&#39;, &#39;success_no_circle&#39;, &#39;info&#39;, &#39;warn&#39;, &#39;waiting&#39;, &#39;cancel&#39;,
-&#39;download&#39;, &#39;search&#39;, &#39;clear&#39;</code> </li>
-</ul>
-</li>
-<li>size: 图标的大小<ul>
-<li>有效值: 数值,默认23</li>
-</ul>
-</li>
-<li>color: 图标的颜色</li>
-</ul>
-</li>
-<li><p><strong>radio标签</strong></p>
-<ul>
-<li>radio标签必须要和父元素<code>radio-group</code>配合使用</li>
-<li><code>value</code>:选中的单选框的值</li>
-<li>需要给<code>radio-group</code>绑定<code>change</code>事件</li>
-</ul>
-</li>
-</ul>
-
       
     </div>
     <!--  -->
@@ -1376,6 +1126,21 @@
     
   </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 2
+        </p>
+        
+          <a class="next" rel="next" href="/archives/2020/page/2/">
+            <section class="post next white-box  widget-blur">
+              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
     
     <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
     
@@ -1520,19 +1285,14 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="" target="_blank" class="codename">Volantis</a>
-    作为主题
+    as theme
     
-      ，
-      总访问量为
-      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      次
-    
-    。
+    . 
   </div>
   
 </footer>
@@ -1578,8 +1338,6 @@
   </script>
 
 
-
-  <script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
 
 
 
@@ -1636,6 +1394,90 @@
 
 
 <!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
 
 
 

@@ -208,7 +208,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -256,7 +256,9 @@
 <li>暂存区: 临时存放被修改文件</li>
 <li>工作目录: 被git管理的项目目录</li>
 </ol>
-<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3><ol>
+<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3><a id="more"></a> 
+
+<ol>
 <li>配置提交人姓名: <code>git config --global user.name 提交人姓名</code></li>
 <li>配置提交人邮箱: <code>git config --global user.email 提交人邮箱</code></li>
 <li>查看git配置信息: <code>git config --list</code></li>
@@ -328,11 +330,11 @@
                 
                     <section class="prev">
                         <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
                             <h4>
-                                <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/" rel="prev" title="详解Ajax">
+                                <a href="/2020/03/03/%E8%AF%A6%E8%A7%A3Ajax/" rel="prev" title="详解Ajax(基础)">
                                   
-                                      详解Ajax
+                                      详解Ajax(基础)
                                   
                                 </a>
                             </h4>
@@ -348,19 +350,14 @@
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2020/03/02/JS%E4%B8%AD%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" rel="prev" title="JS中数组去重的几种常用方法">
+                                <a href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/" rel="prev" title="JS的一些基础面试题(持续更新)">
                                     
-                                        JS中数组去重的几种常用方法
+                                        JS的一些基础面试题(持续更新)
                                     
                                 </a>
                             </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/js/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> js</a>
-                                </h6>
                             
                         </span>
                     </section>
@@ -566,19 +563,14 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="" target="_blank" class="codename">Volantis</a>
-    作为主题
+    as theme
     
-      ，
-      总访问量为
-      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      次
-    
-    。
+    . 
   </div>
   
 </footer>
@@ -616,8 +608,6 @@
   </script>
 
 
-
-  <script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
 
 
 
@@ -674,6 +664,90 @@
 
 
 <!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
 
 
 

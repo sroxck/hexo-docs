@@ -221,7 +221,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -263,45 +263,16 @@
 <li>暂存区: 临时存放被修改文件</li>
 <li>工作目录: 被git管理的项目目录</li>
 </ol>
-<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3><ol>
-<li>配置提交人姓名: <code>git config --global user.name 提交人姓名</code></li>
-<li>配置提交人邮箱: <code>git config --global user.email 提交人邮箱</code></li>
-<li>查看git配置信息: <code>git config --list</code></li>
-</ol>
-<h3 id="git-提交步骤"><a href="#git-提交步骤" class="headerlink" title="git 提交步骤"></a>git 提交步骤</h3><ol>
-<li>初始化git仓库: <code>git init</code></li>
-<li>查看文件状态: <code>git status</code></li>
-<li>添加文件到暂存区: <code>git add 文件名</code></li>
-<li>向仓库中提交代码: <code>git commit -m 提交信息</code></li>
-<li>查看提交代码: <code>git log</code></li>
-</ol>
-<h3 id="git-撤销"><a href="#git-撤销" class="headerlink" title="git 撤销"></a>git 撤销</h3><ol>
-<li>用暂存区文件,覆盖工作目录中的文件: <code>git checkout 文件名</code></li>
-<li>将文件从暂存区中删除: <code>git rm --chached 文件名</code></li>
-<li>将git仓库中指定的更新记录恢复出来,并覆盖暂存区和工作目录: <code>git reset --hard 提交ID</code></li>
-</ol>
-<h3 id="git-分支"><a href="#git-分支" class="headerlink" title="git 分支"></a>git 分支</h3><ol>
-<li>主分支: <code>master</code> :git自动产生的一条分支</li>
-<li>开发分支:<code>develop</code>: 作为开发的分支,基于<code>mastar</code>分支创建</li>
-<li>功能分支:<code>feature</code>: 作为开发具体功能的分支,基于<code>develop</code>分支创建</li>
-</ol>
-<h3 id="git-分支命令"><a href="#git-分支命令" class="headerlink" title="git 分支命令"></a>git 分支命令</h3><ol>
-<li>查看分支: <code>git branch</code></li>
-<li>创建分支: <code>git branch 分支名称</code> </li>
-<li>切换分支: <code>git checkout 分支名称</code></li>
-<li>创建分支并切换到创建的分支: <code>git checkout -b 分支名</code></li>
-<li>合并分支: <code>git merge 分支名 被合并分支名</code></li>
-<li>删除分支:<code>git branch -d 分支名</code> 注意:合并分支后才可以删除,可以使用-D强制删除</li>
-<li>暂时保存更改,独立于分支,在任何分支可用<ol>
-<li>存储临时改动: <code>git stash</code></li>
-<li>恢复改动: <code>git stash pop</code></li>
-</ol>
-</li>
-</ol>
-<h3 id="git-忽略清单"><a href="#git-忽略清单" class="headerlink" title="git 忽略清单"></a>git 忽略清单</h3><blockquote>
-<p><code>.gitignore</code> 文件中设置不需要被git管理的文件或文件夹</p>
-</blockquote>
-
+<h3 id="git-使用前配置"><a href="#git-使用前配置" class="headerlink" title="git 使用前配置"></a>git 使用前配置</h3>
+      
+        
+          <div class="button readmore">
+            <a href="/2020/03/03/git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -345,7 +316,7 @@
             
   <div class='new-meta-item author'>
     
-      <a href="http://yoursite.com" rel="nofollow">
+      <a href="http://yalibook.com" rel="nofollow">
         
           <i class="fas fa-user" aria-hidden="true"></i>
         
@@ -385,23 +356,15 @@
       <blockquote>
 <p>准备工作: git软件,github账户</p>
 </blockquote>
-<p>第一步:在命令行中<code>cd</code>到项目所在目录,或者<code>shift+鼠标右键</code>在项目根目录打开命令行  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd C:\xxx\xxx\xxx</span><br></pre></td></tr></table></figure>
-
-<p>第二步:在当面目录下执行如下命令</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment">// 初始化git仓库</span></span><br></pre></td></tr></table></figure>
-<p>第三步:关联远程仓库</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin url</span><br><span class="line"><span class="comment">// origin是远程仓库url的别称,之后可以直接使用这个别称</span></span><br><span class="line"><span class="comment">// url 是要推送到的仓库地址,推荐使用ssh秘钥形式,免密登录</span></span><br></pre></td></tr></table></figure>
-<p>第四步:把代码提交到暂存区</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line"><span class="comment">// 此操作将有过更改的所有文件都添加进暂存区等待提交</span></span><br></pre></td></tr></table></figure>
-
-<p>第五步:提交代码到本地仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'提交信息'</span></span><br></pre></td></tr></table></figure>
-
-<p>第六步: 推送到远程仓库</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin mastar</span><br><span class="line"><span class="comment">// -u参数代表记住本次推送配置,之后推送直接git push即可</span></span><br></pre></td></tr></table></figure>
-
-
+      
+        
+          <div class="button readmore">
+            <a href="/2020/02/27/%E4%BD%BF%E7%94%A8git%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE,%E6%8E%A8%E9%80%81%E5%88%B0github%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="flat-box">
+              <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+              Read More
+            </a>
+          </div>
+        
       
     </div>
     <!-- 
@@ -565,19 +528,14 @@
   
   
   <br>
-  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="" target="_blank" class="codename">Volantis</a>
-    作为主题
+    as theme
     
-      ，
-      总访问量为
-      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      次
-    
-    。
+    . 
   </div>
   
 </footer>
@@ -615,8 +573,6 @@
   </script>
 
 
-
-  <script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
 
 
 
@@ -673,6 +629,90 @@
 
 
 <!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
 
 
 
