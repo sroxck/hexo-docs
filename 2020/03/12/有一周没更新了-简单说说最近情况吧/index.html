@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>JS中数组去重的几种常用方法 | 鸭梨鸭梨呀-Sroxck</title>
+  <title>有一周没更新了,简单说说最近情况吧 | 鸭梨鸭梨呀-Sroxck</title>
   
   <meta name="keywords" content="技术博客,sroxck,javascript,jQuery,vue全家桶">
   
@@ -192,8 +192,8 @@
         
   
     <h1 class="title">
-      <a href="/2020/03/02/JS%E4%B8%AD%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
-        JS中数组去重的几种常用方法
+      <a href="/2020/03/12/%E6%9C%89%E4%B8%80%E5%91%A8%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86-%E7%AE%80%E5%8D%95%E8%AF%B4%E8%AF%B4%E6%9C%80%E8%BF%91%E6%83%85%E5%86%B5%E5%90%A7/">
+        有一周没更新了,简单说说最近情况吧
       </a>
     </h1>
   
@@ -229,7 +229,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-edit" aria-hidden="true"></i>
-    <p>消息发布于：Mar 2, 2020</p>
+    <p>消息发布于：Mar 12, 2020</p>
   </a>
 </div>
 
@@ -251,29 +251,7 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           
-          <h3 id="利用ES6-Set数据结构去重"><a href="#利用ES6-Set数据结构去重" class="headerlink" title="利用ES6 Set数据结构去重"></a>利用ES6 Set数据结构去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="keyword">let</span> result = [...new <span class="built_in">Set</span>(arr)];</span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路:利用了ES6 <code>Set</code>数据结构中,值不能重复的特性,使用ES6扩展运算符将获得的Set数据放入数组中转换为普通数据,优点是简洁</p>
-</blockquote>
-<a id="more"></a> 
-
-<h3 id="利用indexOf去重"><a href="#利用indexOf去重" class="headerlink" title="利用indexOf去重"></a>利用indexOf去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = []; <span class="comment">// 创建空的结果数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123; <span class="comment">// 循环原数组, arr[i]就是当前项的值</span></span><br><span class="line">        <span class="keyword">if</span> (result.indexOf(arr[i]) === <span class="number">-1</span>) &#123; <span class="comment">// 判断结果数组中存在不存在当前项的值</span></span><br><span class="line">            result.push(arr[i]) <span class="comment">// 如果不存在, 说明结果数组中没有这个值,就追加进结果数组</span></span><br><span class="line">        &#125;<span class="comment">// 有这个值,(重复了)就不会进入if,直接进行下一次循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路: 新建一个空的结果数组, for循环原数组, 判断结果数组中是否存在当前元素<code>(indexOf: 在数组中查找具体值的索引,没找到返回-1)</code>, 不存在就将值放入结果数组,存在就不会进入if判断</p>
-</blockquote>
-<h3 id="利用includes去重"><a href="#利用includes去重" class="headerlink" title="利用includes去重"></a>利用includes去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = []; <span class="comment">// 创建空的结果数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123; <span class="comment">// 循环原数组, arr[i]就是当前项的值</span></span><br><span class="line">        <span class="keyword">if</span> (!result.includes(arr[i])) &#123; <span class="comment">// 判断结果数组中存在不存在当前项的值</span></span><br><span class="line">            result.push(arr[i]) <span class="comment">// 如果不存在, 说明结果数组中没有这个值,就追加进结果数组</span></span><br><span class="line">        &#125;<span class="comment">// 有这个值,(重复了)就不会进入if,直接进行下一次循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路: 整体思路与利用indexOf相同,`includes的作用是查找数组中是否包含某个值,如果包含返回true</p>
-</blockquote>
-<h3 id="利用filter去重"><a href="#利用filter去重" class="headerlink" title="利用filter去重"></a>利用filter去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    arr.filter(<span class="function">(<span class="params">item,index,arr</span>) =&gt;</span> &#123;</span><br><span class="line">        arr.indexOf(item,<span class="number">0</span>) === index</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log (unique(arr)) <span class="comment">// [1, 2, 3, "1", "2", "3"]</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>思路:</p>
-</blockquote>
-
+          <h1 id="忙"><a href="#忙" class="headerlink" title="忙"></a>忙</h1><h1 id="忙忙"><a href="#忙忙" class="headerlink" title="忙忙"></a>忙忙</h1><h1 id="忙忙忙"><a href="#忙忙忙" class="headerlink" title="忙忙忙"></a>忙忙忙</h1><h1 id="忙忙忙忙"><a href="#忙忙忙忙" class="headerlink" title="忙忙忙忙"></a>忙忙忙忙</h1><h1 id="忙忙忙忙忙"><a href="#忙忙忙忙忙" class="headerlink" title="忙忙忙忙忙"></a>忙忙忙忙忙</h1>
           
         </div>
         
@@ -291,9 +269,6 @@
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/js/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>js</p></a></div>
-
 
         
       
@@ -305,36 +280,22 @@
         
             <div class="prev-next">
                 
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
-                            <h4>
-                                <a href="/2020/03/03/git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" rel="prev" title="git版本管理的基本使用">
-                                  
-                                      git版本管理的基本使用
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/git/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> git</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
                             <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/" rel="prev" title="JS的一些基础面试题(持续更新)">
+                                <a href="/2020/03/04/%E4%BD%BF%E7%94%A8VueX%E8%BF%9B%E8%A1%8C%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" rel="prev" title="使用VueX进行状态管理">
                                     
-                                        JS的一些基础面试题(持续更新)
+                                        使用VueX进行状态管理
                                     
                                 </a>
                             </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/vueX/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> vueX</a>
+                                </h6>
                             
                         </span>
                     </section>
@@ -364,7 +325,7 @@
 
   <script>
     window.subData = {
-      title: 'JS中数组去重的几种常用方法',
+      title: '有一周没更新了,简单说说最近情况吧',
       tools: true
     }
   </script>
@@ -479,7 +440,7 @@
 
 
     <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用ES6-Set数据结构去重"><span class="toc-text">利用ES6 Set数据结构去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用indexOf去重"><span class="toc-text">利用indexOf去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用includes去重"><span class="toc-text">利用includes去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#利用filter去重"><span class="toc-text">利用filter去重</span></a></li></ol>
+      
     </div>
   </section>
 

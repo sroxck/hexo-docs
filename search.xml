@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>有一周没更新了,简单说说最近情况吧</title>
+      <link href="/2020/03/12/%E6%9C%89%E4%B8%80%E5%91%A8%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86-%E7%AE%80%E5%8D%95%E8%AF%B4%E8%AF%B4%E6%9C%80%E8%BF%91%E6%83%85%E5%86%B5%E5%90%A7/"/>
+      <url>/2020/03/12/%E6%9C%89%E4%B8%80%E5%91%A8%E6%B2%A1%E6%9B%B4%E6%96%B0%E4%BA%86-%E7%AE%80%E5%8D%95%E8%AF%B4%E8%AF%B4%E6%9C%80%E8%BF%91%E6%83%85%E5%86%B5%E5%90%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="忙"><a href="#忙" class="headerlink" title="忙"></a>忙</h1><h1 id="忙忙"><a href="#忙忙" class="headerlink" title="忙忙"></a>忙忙</h1><h1 id="忙忙忙"><a href="#忙忙忙" class="headerlink" title="忙忙忙"></a>忙忙忙</h1><h1 id="忙忙忙忙"><a href="#忙忙忙忙" class="headerlink" title="忙忙忙忙"></a>忙忙忙忙</h1><h1 id="忙忙忙忙忙"><a href="#忙忙忙忙忙" class="headerlink" title="忙忙忙忙忙"></a>忙忙忙忙忙</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用VueX进行状态管理</title>
       <link href="/2020/03/04/%E4%BD%BF%E7%94%A8VueX%E8%BF%9B%E8%A1%8C%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"/>
       <url>/2020/03/04/%E4%BD%BF%E7%94%A8VueX%E8%BF%9B%E8%A1%8C%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/</url>
@@ -80,19 +93,6 @@
     
     
     <entry>
-      <title>JS的一些基础面试题(持续更新)</title>
-      <link href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/"/>
-      <url>/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/</url>
-      
-        <content type="html"><![CDATA[<h3 id="JS基本数据类型有几种-都是哪些"><a href="#JS基本数据类型有几种-都是哪些" class="headerlink" title="JS基本数据类型有几种?都是哪些?"></a>JS基本数据类型有几种?都是哪些?</h3><blockquote><p>共6种(es6), String, Boolean, Number, Null, Undefined, Symbol</p></blockquote><a id="more"></a> ]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JS中数组去重的几种常用方法</title>
       <link href="/2020/03/02/JS%E4%B8%AD%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
       <url>/2020/03/02/JS%E4%B8%AD%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
@@ -106,6 +106,19 @@
             <tag> js </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JS的一些基础面试题(持续更新)</title>
+      <link href="/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/"/>
+      <url>/2020/03/02/JS%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98(%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0)/</url>
+      
+        <content type="html"><![CDATA[<h3 id="JS基本数据类型有几种-都是哪些"><a href="#JS基本数据类型有几种-都是哪些" class="headerlink" title="JS基本数据类型有几种?都是哪些?"></a>JS基本数据类型有几种?都是哪些?</h3><blockquote><p>共6种(es6), String, Boolean, Number, Null, Undefined, Symbol</p></blockquote><a id="more"></a> ]]></content>
+      
+      
       
     </entry>
     
