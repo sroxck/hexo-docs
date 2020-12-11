@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='Volantis' version='1.5.5' docs='https://xaoxuu.com/wiki/volantis/'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Vue项目优化和部署上线 | 鸭梨鸭梨呀-Sroxck</title>
+  
+  <meta name="keywords" content="技术博客,sroxck,javascript,jQuery,vue全家桶">
+  
+  
+  <meta name="description" content="分享技术,个人生活,学习知识的场所,有鸭梨才能成长,有鸭梨才能进步">
+  
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+  
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <p class="title ">Sroxck</p>
+  
+    <p class="subtitle ">记录生活,记录学习,与鸭梨共成长</p>
+  
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <i class="icon fas fa-search fa-fw"></i>
+      <input type="text" class="input u-search-input" placeholder="搜索文档" />
+    </form>
+  </div>
+
+<div class='menu navigation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home "
+            href="/"
+            
+            
+            id="home">
+            <i class='fas fa-flag fa-fw'></i>&nbsp;文档
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header nav-blur">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" target="_self" href='/' >
+        
+          
+          
+            Sroxck
+          
+        
+      </a>
+			<div class='menu navigation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/archives"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-flag fa-fw'></i>&nbsp;文章集合
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索文档" />
+        </form>
+      </div>
+
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone white-box">
+    <header>
+		<nav class="menu navigation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/archives"
+                
+                
+                id="archives">
+								<i class='fas fa-flag fa-fw'></i>&nbsp;文章集合
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      
+
+<div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box   article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/02/29/Vue%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96%E5%92%8C%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/">
+        Vue项目优化和部署上线
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yalibook.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>Sroxck</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-edit" aria-hidden="true"></i>
+    <p>消息发布于：Feb 29, 2020</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <h2 id="项目优化策略"><a href="#项目优化策略" class="headerlink" title="项目优化策略"></a>项目优化策略</h2><h3 id="1-生成打包报告"><a href="#1-生成打包报告" class="headerlink" title="1. 生成打包报告"></a>1. 生成打包报告</h3><p>打包时,为了直观的发现项目中存在的问题,可以在打包时生成打包报告,生成报告的方式有两种 </p>
+<ol>
+<li><p>通过命令行参数的形式生成报告 </p>
+<blockquote>
+<p>vue-cli-service build –report </p>
+</blockquote>
+</li>
+<li><p>通过可视化UI面板直接查看报告(推荐) </p>
+<a id="more"></a> 
+
+</li>
+</ol>
+<h3 id="2-通过vue-config-js-修改-webpack的默认配置"><a href="#2-通过vue-config-js-修改-webpack的默认配置" class="headerlink" title="2. 通过vue.config.js 修改 webpack的默认配置"></a>2. 通过vue.config.js 修改 webpack的默认配置</h3><p>通过vue-cli 3.0 创建的项目,默认隐藏了所有webpack的配置项目,目的是为了屏蔽项目的配置过程</p>
+<p>如果有需要修改webpack的需求,可以在项目根目录创建 vue.config.js,从而做自定义的配置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line">基本格式</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="comment">//选项</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-为开发模式和发布模式指定不同的打包入口"><a href="#3-为开发模式和发布模式指定不同的打包入口" class="headerlink" title="3.为开发模式和发布模式指定不同的打包入口"></a>3.为开发模式和发布模式指定不同的打包入口</h3><p>默认情况下,vue项目的开发模式和发布模式,共用一个打包的入口文件,即 src/main.js</p>
+<p>可以分离为2种模式</p>
+<p>开发模式入口文件 src/main-dev.js</p>
+<p>发布模式入口文件 src/main-prod.js</p>
+<p>那么如何分离呢?</p>
+<h4 id="3-1-使用configureWebpack和chainWebpack"><a href="#3-1-使用configureWebpack和chainWebpack" class="headerlink" title="3.1 使用configureWebpack和chainWebpack"></a>3.1 使用configureWebpack和chainWebpack</h4><p>在vue.config.js导出的配置对象中,新增configureWebpack或者chainWebpack来自定义Webpack打包配置</p>
+<p><strong>configureWebpack和chainWebpack 作用相同,修改的方式不同</strong></p>
+<p>1  chainWebpack  通过链式编程来修改Webpack配置</p>
+<p>2  configureWebpack 通过操作对象的形式来修改Webpack配置</p>
+<h4 id="3-2-通过-chainWebpack-自定义打包入口"><a href="#3-2-通过-chainWebpack-自定义打包入口" class="headerlink" title="3.2 通过 chainWebpack 自定义打包入口"></a>3.2 通过 chainWebpack 自定义打包入口</h4><p>代码示例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	chainWebpack: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">		config.when(process.env.NODE_ENV === <span class="string">&#x27;production&#x27;</span>, <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">			config.entry(<span class="string">&#x27;app&#x27;</span>).clear().add(<span class="string">&#x27;./src/main-prod.js&#x27;</span>)</span><br><span class="line">		&#125;)</span><br><span class="line">		config.when(process.env.NODE_ENV === <span class="string">&#x27;development&#x27;</span>, <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">			config.entry(<span class="string">&#x27;app&#x27;</span>).clear().add(<span class="string">&#x27;./src/main-dev.js&#x27;</span>)</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-通过-externals-加载外部-CDN-资源"><a href="#4-通过-externals-加载外部-CDN-资源" class="headerlink" title="4 .通过 externals 加载外部 CDN 资源"></a>4 .通过 externals 加载外部 CDN 资源</h3><p>​    默认情况下，通过 import 语法导入的第三方依赖包，最终会被打包合并到同一个文件中，从而导致打包成功后，单文件体积过大的问题。</p>
+<p>​    为了解决上述问题，可以通过 webpack 的 externals 节点，来配置并加载外部的 CDN 资源。凡是声明在externals 中的第三方依赖包，都不会被打包。</p>
+<p>示例代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">config.set(<span class="string">&#x27;externals&#x27;</span>, &#123;</span><br><span class="line">	vue: <span class="string">&#x27;Vue&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;vue-router&#x27;</span>: <span class="string">&#x27;VueRouter&#x27;</span>,</span><br><span class="line">	axios: <span class="string">&#x27;axios&#x27;</span>,</span><br><span class="line">	lodash: <span class="string">&#x27;_&#x27;</span>,</span><br><span class="line">	echarts: <span class="string">&#x27;echarts&#x27;</span>,</span><br><span class="line">	nprogress: <span class="string">&#x27;NProgress&#x27;</span>,</span><br><span class="line">	<span class="string">&#x27;vue-quill-editor&#x27;</span>: <span class="string">&#x27;VueQuillEditor&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>然后需要在public 下面的index.html中 使用cdn引入对应的资源 !!!重点</strong></p>
+<p>参考配置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="comment">// 基本路径</span></span><br><span class="line">    baseUrl: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">    <span class="comment">// 输出文件目录</span></span><br><span class="line">    outputDir: <span class="string">&#x27;dist&#x27;</span>,</span><br><span class="line">    <span class="comment">// eslint-loader 是否在保存的时候检查</span></span><br><span class="line">    lintOnSave: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// webpack配置</span></span><br><span class="line">    chainWebpack: <span class="function">() =&gt;</span> &#123; &#125;,</span><br><span class="line">    configureWebpack: <span class="function">() =&gt;</span> &#123; &#125;,</span><br><span class="line">    <span class="comment">// 生产环境是否生成 sourceMap 文件</span></span><br><span class="line">    productionSourceMap: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// css相关配置</span></span><br><span class="line">    css: &#123;</span><br><span class="line">        <span class="comment">// 是否使用css分离插件 ExtractTextPlugin</span></span><br><span class="line">        extract: <span class="literal">true</span>,</span><br><span class="line">        <span class="comment">// 开启 CSS source maps?</span></span><br><span class="line">        sourceMap: <span class="literal">false</span>,</span><br><span class="line">        <span class="comment">// css预设器配置项</span></span><br><span class="line">        loaderOptions: &#123;&#125;,</span><br><span class="line">        <span class="comment">// 启用 CSS modules for all css / pre-processor files.</span></span><br><span class="line">        modules: <span class="literal">false</span></span><br><span class="line">    &#125;,</span><br><span class="line">    parallel: <span class="built_in">require</span>(<span class="string">&#x27;os&#x27;</span>).cpus().length &gt; <span class="number">1</span>,</span><br><span class="line">    pwa: &#123;&#125;,</span><br><span class="line">    <span class="comment">// webpack-dev-server 相关配置</span></span><br><span class="line">    devServer: &#123;</span><br><span class="line">        open: <span class="literal">true</span>,                                 <span class="comment">//配置自动启动浏览器</span></span><br><span class="line">        host: <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">        port: <span class="number">8080</span>,                                 <span class="comment">// 端口号</span></span><br><span class="line">        https: <span class="literal">false</span>,</span><br><span class="line">        hotOnly: <span class="literal">false</span>,                             <span class="comment">// https:&#123;type:Boolean&#125;</span></span><br><span class="line">        proxy: &#123;                                        <span class="comment">// 配置跨域</span></span><br><span class="line">            <span class="string">&#x27;/api&#x27;</span>:&#123;</span><br><span class="line">                target:<span class="string">&#x27;http://xxx.xx.xxx.xxx:8080&#x27;</span>, <span class="comment">//源地址</span></span><br><span class="line">                changeOrigin:<span class="literal">true</span>,                  <span class="comment">//改变源</span></span><br><span class="line">                ws:<span class="literal">true</span>,                            <span class="comment">//是否代理websockets</span></span><br><span class="line">                pathRewrite:&#123;</span><br><span class="line">                    <span class="string">&#x27;^/api&#x27;</span>:<span class="string">&#x27;&#x27;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,                                           <span class="comment">// 配置跨域处理,只有一个代理</span></span><br><span class="line">        before: <span class="function"><span class="params">app</span> =&gt;</span> &#123; &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 第三方插件配置</span></span><br><span class="line">    pluginOptions: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-通过-CDN-优化-ElementUI-的打包"><a href="#5-通过-CDN-优化-ElementUI-的打包" class="headerlink" title="5.通过 CDN 优化 ElementUI 的打包"></a>5.通过 CDN 优化 ElementUI 的打包</h3><p>虽然在开发阶段，我们启用了 element-ui 组件的按需加载，尽可能的减少了打包的体积，但是那些被按需加载的组件，还是占用了较大的文件体积。此时，我们可以将 element-ui 中的组件，也通过 CDN 的形式来加载，这样能够进一步减小打包后的文件体积。</p>
+<p>具体操作流程如下：</p>
+<p>① 在 main-prod.js 中，注释掉 element-ui 按需加载的代码</p>
+<p>② 在 index.html 的头部区域中，通过 CDN 加载 element-ui 的 js 和 css 样式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- element-ui 的样式表文件 --&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.staticfile.org/element-ui/2.8.2/theme</span></span><br><span class="line"><span class="string">chalk/index.css&quot;</span> /&gt;</span><br><span class="line">&lt;!-- element-ui 的 js 文件 --&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.staticfile.org/element-ui/2.8.2/index.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-首页内容定制"><a href="#6-首页内容定制" class="headerlink" title="6.首页内容定制"></a>6.首页内容定制</h3><p>不同的打包环境下，首页内容可能会有所不同。我们可以通过插件的方式进行定制，插件配置如下 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">chainWebpack: <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">	config.when(process.env.NODE_ENV === <span class="string">&#x27;production&#x27;</span>, <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">		config.plugin(<span class="string">&#x27;html&#x27;</span>).tap(<span class="function"><span class="params">args</span> =&gt;</span> &#123;</span><br><span class="line">		args[<span class="number">0</span>].isProd = <span class="literal">true</span></span><br><span class="line">		<span class="keyword">return</span> args</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br><span class="line">config.when(process.env.NODE_ENV === <span class="string">&#x27;development&#x27;</span>, <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">	config.plugin(<span class="string">&#x27;html&#x27;</span>).tap(<span class="function"><span class="params">args</span> =&gt;</span> &#123;</span><br><span class="line">		args[<span class="number">0</span>].isProd = <span class="literal">false</span></span><br><span class="line">		<span class="keyword">return</span> args</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 首页内容定制</span></span><br><span class="line"><span class="comment">// 在 public/index.html 首页中，可以根据 isProd 的值，来决定如何渲染页面结构：</span></span><br><span class="line">&lt;!– 按需渲染页面的标题 --&gt;</span><br><span class="line">&lt;title&gt;&lt;%= htmlWebpackPlugin.options.isProd ? <span class="string">&#x27;&#x27;</span> : <span class="string">&#x27;dev - &#x27;</span> %&gt;电商后台管理系统&lt;/title&gt;</span><br><span class="line">&lt;!– 按需加载外部的 CDN 资源 --&gt;</span><br><span class="line">&lt;% <span class="keyword">if</span>(htmlWebpackPlugin.options.isProd) &#123; %&gt;</span><br><span class="line">&lt;!—通过 externals 加载的外部 CDN 资源--&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-路由懒加载"><a href="#7-路由懒加载" class="headerlink" title="7.路由懒加载"></a>7.路由懒加载</h3><p>当打包构建项目时，JavaScript 包会变得非常大，影响页面加载。如果我们能把不同路由对应的组件分割成</p>
+<p>不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了。</p>
+<p>具体需要 3 步：</p>
+<p>① 安装 @babel/plugin-syntax-dynamic-import 包。</p>
+<p>② 在 babel.config.js 配置文件中声明该插件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  presets: [<span class="string">&#x27;@vue/cli-plugin-babel/preset&#x27;</span>],</span><br><span class="line">  plugins: [</span><br><span class="line">    [</span><br><span class="line">      <span class="string">&#x27;component&#x27;</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        libraryName: <span class="string">&#x27;element-ui&#x27;</span>,</span><br><span class="line">        styleLibraryName: <span class="string">&#x27;theme-chalk&#x27;</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&#x27;@babel/plugin-syntax-dynamic-import&#x27;</span> <span class="comment">// 这条是声明的</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>③ 将路由改为按需加载的形式，示例代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Foo = <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;group-foo&quot; */</span> <span class="string">&#x27;./Foo.vue&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Bar = <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;group-foo&quot; */</span> <span class="string">&#x27;./Bar.vue&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Baz = <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="comment">/* webpackChunkName: &quot;group-boo&quot; */</span> <span class="string">&#x27;./Baz.vue&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>关于路由懒加载的详细文档，可参考如下链接：</p>
+<p><a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/guide/advanced/lazy-loading.html">https://router.vuejs.org/zh/guide/advanced/lazy-loading.html</a></p>
+<h3 id="8-使用pm2-管理应用"><a href="#8-使用pm2-管理应用" class="headerlink" title="8.使用pm2 管理应用"></a>8.使用pm2 管理应用</h3><ol>
+<li>在服务器中安装pm2: <code>npm i pm2 -g</code></li>
+<li>启动项目:<code>pm2 start 文件</code></li>
+<li>查看运行项目:<code>pm2 ls</code></li>
+<li>重启项目:<code>pm2 restart 文件名</code></li>
+<li>停止项目:<code>pm2 stop 文件名</code></li>
+<li>删除项目:<code>pm2 delete 文件名</code></li>
+</ol>
+
+          
+        </div>
+        
+          <br>
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          
+
+        
+      
+        
+          
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                            <h4>
+                                <a href="/2020/02/29/H5C3%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" rel="prev" title="H5C3笔记">
+                                  
+                                      H5C3笔记
+                                  
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2020/02/28/%E5%9F%BA%E4%BA%8ENeteaseCloudMusicApi%E7%9A%84vue%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E9%A1%B9%E7%9B%AE/" rel="prev" title="基于NeteaseCloudMusicApi的vue音乐播放器项目">
+                                    
+                                        基于NeteaseCloudMusicApi的vue音乐播放器项目
+                                    
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Vue项目优化和部署上线',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+
+<section class="widget grid  widget-blur desktop mobile">
+  
+  <header>
+    
+      <i class="fas fa-map-signs fa-fw" aria-hidden="true"></i><span class='name'>文档导航</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="grid navigation">
+      
+        <li><a class="flat-box" title="/archives" href="/archives"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-file-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about" href="/about"
+          
+          
+            target="_blank"
+          
+          id="about">
+          
+            <i class="fas fa-play-circle fa-fw" aria-hidden="true"></i>
+          
+          关于我
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+      
+    
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+      
+    
+      
+        
+
+
+  <section class="widget toc-wrapper  widget-blur desktop mobile">
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96%E7%AD%96%E7%95%A5"><span class="toc-text">项目优化策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%9F%E6%88%90%E6%89%93%E5%8C%85%E6%8A%A5%E5%91%8A"><span class="toc-text">1. 生成打包报告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%9A%E8%BF%87vue-config-js-%E4%BF%AE%E6%94%B9-webpack%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE"><span class="toc-text">2. 通过vue.config.js 修改 webpack的默认配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%B8%BA%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E6%8C%87%E5%AE%9A%E4%B8%8D%E5%90%8C%E7%9A%84%E6%89%93%E5%8C%85%E5%85%A5%E5%8F%A3"><span class="toc-text">3.为开发模式和发布模式指定不同的打包入口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E4%BD%BF%E7%94%A8configureWebpack%E5%92%8CchainWebpack"><span class="toc-text">3.1 使用configureWebpack和chainWebpack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E9%80%9A%E8%BF%87-chainWebpack-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%93%E5%8C%85%E5%85%A5%E5%8F%A3"><span class="toc-text">3.2 通过 chainWebpack 自定义打包入口</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%80%9A%E8%BF%87-externals-%E5%8A%A0%E8%BD%BD%E5%A4%96%E9%83%A8-CDN-%E8%B5%84%E6%BA%90"><span class="toc-text">4 .通过 externals 加载外部 CDN 资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%80%9A%E8%BF%87-CDN-%E4%BC%98%E5%8C%96-ElementUI-%E7%9A%84%E6%89%93%E5%8C%85"><span class="toc-text">5.通过 CDN 优化 ElementUI 的打包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%A6%96%E9%A1%B5%E5%86%85%E5%AE%B9%E5%AE%9A%E5%88%B6"><span class="toc-text">6.首页内容定制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E8%B7%AF%E7%94%B1%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="toc-text">7.路由懒加载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E4%BD%BF%E7%94%A8pm2-%E7%AE%A1%E7%90%86%E5%BA%94%E7%94%A8"><span class="toc-text">8.使用pm2 管理应用</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+</aside>
+
+<footer class="clearfix ">
+  <br><br>
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="/www.baidu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/sroxck"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  
+  <br>
+  <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>
+    Use
+    <a href="" target="_blank" class="codename">Volantis</a>
+    as theme
+    
+    . 
+  </div>
+  
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  
+<script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+  <script async src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+
+
+
+  
+  
+  
+    
+<script src="//cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        if ('') {
+          $('').backstretch(
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/298468D7-E388-44A8-8CC5-8213BDC33CED.jpeg"],
+          {
+            duration: "10000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg", "https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/298468D7-E388-44A8-8CC5-8213BDC33CED.jpeg"],
+          {
+            duration: "10000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.39/js/comment_typing.js"></script>
+
+
+
+<!-- 复制 -->
+
+  <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+
+
+<!-- fancybox -->
+
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
